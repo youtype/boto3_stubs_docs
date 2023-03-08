@@ -461,6 +461,7 @@ class PackagingGroupTypeDef(TypedDict):
     ApproximateAssetCount: NotRequired[int],
     Arn: NotRequired[str],
     Authorization: NotRequired[AuthorizationTypeDef],  # (1)
+    CreatedAt: NotRequired[str],
     DomainName: NotRequired[str],
     EgressAccessLogs: NotRequired[EgressAccessLogsTypeDef],  # (2)
     Id: NotRequired[str],
@@ -478,6 +479,7 @@ def get_value() -> ConfigureLogsResponseTypeDef:
     return {
         "Arn": ...,
         "Authorization": ...,
+        "CreatedAt": ...,
         "DomainName": ...,
         "EgressAccessLogs": ...,
         "Id": ...,
@@ -490,6 +492,7 @@ def get_value() -> ConfigureLogsResponseTypeDef:
 class ConfigureLogsResponseTypeDef(TypedDict):
     Arn: str,
     Authorization: AuthorizationTypeDef,  # (1)
+    CreatedAt: str,
     DomainName: str,
     EgressAccessLogs: EgressAccessLogsTypeDef,  # (2)
     Id: str,
@@ -509,6 +512,7 @@ def get_value() -> CreatePackagingGroupResponseTypeDef:
     return {
         "Arn": ...,
         "Authorization": ...,
+        "CreatedAt": ...,
         "DomainName": ...,
         "EgressAccessLogs": ...,
         "Id": ...,
@@ -521,6 +525,7 @@ def get_value() -> CreatePackagingGroupResponseTypeDef:
 class CreatePackagingGroupResponseTypeDef(TypedDict):
     Arn: str,
     Authorization: AuthorizationTypeDef,  # (1)
+    CreatedAt: str,
     DomainName: str,
     EgressAccessLogs: EgressAccessLogsTypeDef,  # (2)
     Id: str,
@@ -541,6 +546,7 @@ def get_value() -> DescribePackagingGroupResponseTypeDef:
         "ApproximateAssetCount": ...,
         "Arn": ...,
         "Authorization": ...,
+        "CreatedAt": ...,
         "DomainName": ...,
         "EgressAccessLogs": ...,
         "Id": ...,
@@ -554,6 +560,7 @@ class DescribePackagingGroupResponseTypeDef(TypedDict):
     ApproximateAssetCount: int,
     Arn: str,
     Authorization: AuthorizationTypeDef,  # (1)
+    CreatedAt: str,
     DomainName: str,
     EgressAccessLogs: EgressAccessLogsTypeDef,  # (2)
     Id: str,
@@ -632,6 +639,7 @@ def get_value() -> UpdatePackagingGroupResponseTypeDef:
         "ApproximateAssetCount": ...,
         "Arn": ...,
         "Authorization": ...,
+        "CreatedAt": ...,
         "DomainName": ...,
         "EgressAccessLogs": ...,
         "Id": ...,
@@ -645,6 +653,7 @@ class UpdatePackagingGroupResponseTypeDef(TypedDict):
     ApproximateAssetCount: int,
     Arn: str,
     Authorization: AuthorizationTypeDef,  # (1)
+    CreatedAt: str,
     DomainName: str,
     EgressAccessLogs: EgressAccessLogsTypeDef,  # (2)
     Id: str,
@@ -1087,6 +1096,7 @@ def get_value() -> CreatePackagingConfigurationResponseTypeDef:
     return {
         "Arn": ...,
         "CmafPackage": ...,
+        "CreatedAt": ...,
         "DashPackage": ...,
         "HlsPackage": ...,
         "Id": ...,
@@ -1101,6 +1111,7 @@ def get_value() -> CreatePackagingConfigurationResponseTypeDef:
 class CreatePackagingConfigurationResponseTypeDef(TypedDict):
     Arn: str,
     CmafPackage: CmafPackageTypeDef,  # (1)
+    CreatedAt: str,
     DashPackage: DashPackageTypeDef,  # (2)
     HlsPackage: HlsPackageTypeDef,  # (3)
     Id: str,
@@ -1124,6 +1135,7 @@ def get_value() -> DescribePackagingConfigurationResponseTypeDef:
     return {
         "Arn": ...,
         "CmafPackage": ...,
+        "CreatedAt": ...,
         "DashPackage": ...,
         "HlsPackage": ...,
         "Id": ...,
@@ -1138,6 +1150,7 @@ def get_value() -> DescribePackagingConfigurationResponseTypeDef:
 class DescribePackagingConfigurationResponseTypeDef(TypedDict):
     Arn: str,
     CmafPackage: CmafPackageTypeDef,  # (1)
+    CreatedAt: str,
     DashPackage: DashPackageTypeDef,  # (2)
     HlsPackage: HlsPackageTypeDef,  # (3)
     Id: str,
@@ -1167,6 +1180,7 @@ def get_value() -> PackagingConfigurationTypeDef:
 class PackagingConfigurationTypeDef(TypedDict):
     Arn: NotRequired[str],
     CmafPackage: NotRequired[CmafPackageTypeDef],  # (1)
+    CreatedAt: NotRequired[str],
     DashPackage: NotRequired[DashPackageTypeDef],  # (2)
     HlsPackage: NotRequired[HlsPackageTypeDef],  # (3)
     Id: NotRequired[str],

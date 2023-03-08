@@ -32913,6 +32913,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#updateipaddresstypedef" class="md-nav__link">
+    UpdateIpAddressTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#updateresolverconfigrequestrequesttypedef" class="md-nav__link">
     UpdateResolverConfigRequestRequestTypeDef
   </a>
@@ -32922,13 +32929,6 @@
         <li class="md-nav__item">
   <a href="#updateresolverdnssecconfigrequestrequesttypedef" class="md-nav__link">
     UpdateResolverDnssecConfigRequestRequestTypeDef
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#updateresolverendpointrequestrequesttypedef" class="md-nav__link">
-    UpdateResolverEndpointRequestRequestTypeDef
   </a>
   
 </li>
@@ -33545,6 +33545,13 @@
         <li class="md-nav__item">
   <a href="#listtagsforresourcerequestlisttagsforresourcepaginatetypedef" class="md-nav__link">
     ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updateresolverendpointrequestrequesttypedef" class="md-nav__link">
+    UpdateResolverEndpointRequestRequestTypeDef
   </a>
   
 </li>
@@ -42054,6 +42061,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#updateipaddresstypedef" class="md-nav__link">
+    UpdateIpAddressTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#updateresolverconfigrequestrequesttypedef" class="md-nav__link">
     UpdateResolverConfigRequestRequestTypeDef
   </a>
@@ -42063,13 +42077,6 @@
         <li class="md-nav__item">
   <a href="#updateresolverdnssecconfigrequestrequesttypedef" class="md-nav__link">
     UpdateResolverDnssecConfigRequestRequestTypeDef
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#updateresolverendpointrequestrequesttypedef" class="md-nav__link">
-    UpdateResolverEndpointRequestRequestTypeDef
   </a>
   
 </li>
@@ -42691,6 +42698,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#updateresolverendpointrequestrequesttypedef" class="md-nav__link">
+    UpdateResolverEndpointRequestRequestTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#updateresolverrulerequestrequesttypedef" class="md-nav__link">
     UpdateResolverRuleRequestRequestTypeDef
   </a>
@@ -42826,6 +42840,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-route
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="n">IpId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="n">SubnetId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    <span class="n">Ip</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    <span class="n">Ipv6</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 </code></pre></div>
 <h2 id="resolverendpointtypedef">ResolverEndpointTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">ResolverEndpointTypeDef</span>
@@ -42848,10 +42863,12 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-route
 <a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>    <span class="n">StatusMessage</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>    <span class="n">CreationTime</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>    <span class="n">ModificationTime</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>    <span class="n">ResolverEndpointType</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">ResolverEndpointTypeType</span><span class="p">],</span>  <span class="c1"># (3)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#resolverendpointdirectiontype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ResolverEndpointDirectionType</a> </li>
 <li>See <a href="../literals/#resolverendpointstatustype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ResolverEndpointStatusType</a> </li>
+<li>See <a href="../literals/#resolverendpointtypetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ResolverEndpointTypeType</a> </li>
 </ol>
 <h2 id="associateresolverquerylogconfigrequestrequesttypedef">AssociateResolverQueryLogConfigRequestRequestTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">AssociateResolverQueryLogConfigRequestRequestTypeDef</span>
@@ -43036,6 +43053,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-route
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="k">class</span> <span class="nc">IpAddressRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>    <span class="n">SubnetId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>    <span class="n">Ip</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>    <span class="n">Ipv6</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 </code></pre></div>
 <h2 id="resolverquerylogconfigtypedef">ResolverQueryLogConfigTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">ResolverQueryLogConfigTypeDef</span>
@@ -43070,8 +43088,9 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-route
 <a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="k">class</span> <span class="nc">TargetAddressTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>    <span class="n">Ip</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>    <span class="n">Ip</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>    <span class="n">Port</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>    <span class="n">Ipv6</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 </code></pre></div>
 <h2 id="deletefirewalldomainlistrequestrequesttypedef">DeleteFirewallDomainListRequestRequestTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">DeleteFirewallDomainListRequestRequestTypeDef</span>
@@ -43459,10 +43478,11 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-route
 <a id="__codelineno-93-2" name="__codelineno-93-2" href="#__codelineno-93-2"></a>    <span class="n">IpId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-93-3" name="__codelineno-93-3" href="#__codelineno-93-3"></a>    <span class="n">SubnetId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-93-4" name="__codelineno-93-4" href="#__codelineno-93-4"></a>    <span class="n">Ip</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-93-5" name="__codelineno-93-5" href="#__codelineno-93-5"></a>    <span class="n">Status</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">IpAddressStatusType</span><span class="p">],</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-93-6" name="__codelineno-93-6" href="#__codelineno-93-6"></a>    <span class="n">StatusMessage</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-93-7" name="__codelineno-93-7" href="#__codelineno-93-7"></a>    <span class="n">CreationTime</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-93-8" name="__codelineno-93-8" href="#__codelineno-93-8"></a>    <span class="n">ModificationTime</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-93-5" name="__codelineno-93-5" href="#__codelineno-93-5"></a>    <span class="n">Ipv6</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-93-6" name="__codelineno-93-6" href="#__codelineno-93-6"></a>    <span class="n">Status</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">IpAddressStatusType</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-93-7" name="__codelineno-93-7" href="#__codelineno-93-7"></a>    <span class="n">StatusMessage</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-93-8" name="__codelineno-93-8" href="#__codelineno-93-8"></a>    <span class="n">CreationTime</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-93-9" name="__codelineno-93-9" href="#__codelineno-93-9"></a>    <span class="n">ModificationTime</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#ipaddressstatustype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> IpAddressStatusType</a> </li>
@@ -43732,50 +43752,51 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-route
 <li>See <a href="../literals/#blockresponsetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> BlockResponseType</a> </li>
 <li>See <a href="../literals/#blockoverridednstypetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> BlockOverrideDnsTypeType</a> </li>
 </ol>
-<h2 id="updateresolverconfigrequestrequesttypedef">UpdateResolverConfigRequestRequestTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-130-1" name="__codelineno-130-1" href="#__codelineno-130-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">UpdateResolverConfigRequestRequestTypeDef</span>
+<h2 id="updateipaddresstypedef">UpdateIpAddressTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-130-1" name="__codelineno-130-1" href="#__codelineno-130-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">UpdateIpAddressTypeDef</span>
 <a id="__codelineno-130-2" name="__codelineno-130-2" href="#__codelineno-130-2"></a>
-<a id="__codelineno-130-3" name="__codelineno-130-3" href="#__codelineno-130-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateResolverConfigRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-130-3" name="__codelineno-130-3" href="#__codelineno-130-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateIpAddressTypeDef</span><span class="p">:</span>
 <a id="__codelineno-130-4" name="__codelineno-130-4" href="#__codelineno-130-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-130-5" name="__codelineno-130-5" href="#__codelineno-130-5"></a>        <span class="s2">&quot;ResourceId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-130-6" name="__codelineno-130-6" href="#__codelineno-130-6"></a>        <span class="s2">&quot;AutodefinedReverseFlag&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-130-5" name="__codelineno-130-5" href="#__codelineno-130-5"></a>        <span class="s2">&quot;IpId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-130-6" name="__codelineno-130-6" href="#__codelineno-130-6"></a>        <span class="s2">&quot;Ipv6&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-130-7" name="__codelineno-130-7" href="#__codelineno-130-7"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-131-1" name="__codelineno-131-1" href="#__codelineno-131-1"></a><span class="k">class</span> <span class="nc">UpdateResolverConfigRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-131-2" name="__codelineno-131-2" href="#__codelineno-131-2"></a>    <span class="n">ResourceId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-131-3" name="__codelineno-131-3" href="#__codelineno-131-3"></a>    <span class="n">AutodefinedReverseFlag</span><span class="p">:</span> <span class="n">AutodefinedReverseFlagType</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-131-1" name="__codelineno-131-1" href="#__codelineno-131-1"></a><span class="k">class</span> <span class="nc">UpdateIpAddressTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-131-2" name="__codelineno-131-2" href="#__codelineno-131-2"></a>    <span class="n">IpId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-131-3" name="__codelineno-131-3" href="#__codelineno-131-3"></a>    <span class="n">Ipv6</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+</code></pre></div>
+<h2 id="updateresolverconfigrequestrequesttypedef">UpdateResolverConfigRequestRequestTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-132-1" name="__codelineno-132-1" href="#__codelineno-132-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">UpdateResolverConfigRequestRequestTypeDef</span>
+<a id="__codelineno-132-2" name="__codelineno-132-2" href="#__codelineno-132-2"></a>
+<a id="__codelineno-132-3" name="__codelineno-132-3" href="#__codelineno-132-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateResolverConfigRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-132-4" name="__codelineno-132-4" href="#__codelineno-132-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-132-5" name="__codelineno-132-5" href="#__codelineno-132-5"></a>        <span class="s2">&quot;ResourceId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-132-6" name="__codelineno-132-6" href="#__codelineno-132-6"></a>        <span class="s2">&quot;AutodefinedReverseFlag&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-132-7" name="__codelineno-132-7" href="#__codelineno-132-7"></a>    <span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-133-1" name="__codelineno-133-1" href="#__codelineno-133-1"></a><span class="k">class</span> <span class="nc">UpdateResolverConfigRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-133-2" name="__codelineno-133-2" href="#__codelineno-133-2"></a>    <span class="n">ResourceId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-133-3" name="__codelineno-133-3" href="#__codelineno-133-3"></a>    <span class="n">AutodefinedReverseFlag</span><span class="p">:</span> <span class="n">AutodefinedReverseFlagType</span><span class="p">,</span>  <span class="c1"># (1)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#autodefinedreverseflagtype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> AutodefinedReverseFlagType</a> </li>
 </ol>
 <h2 id="updateresolverdnssecconfigrequestrequesttypedef">UpdateResolverDnssecConfigRequestRequestTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-132-1" name="__codelineno-132-1" href="#__codelineno-132-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">UpdateResolverDnssecConfigRequestRequestTypeDef</span>
-<a id="__codelineno-132-2" name="__codelineno-132-2" href="#__codelineno-132-2"></a>
-<a id="__codelineno-132-3" name="__codelineno-132-3" href="#__codelineno-132-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateResolverDnssecConfigRequestRequestTypeDef</span><span class="p">:</span>
-<a id="__codelineno-132-4" name="__codelineno-132-4" href="#__codelineno-132-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-132-5" name="__codelineno-132-5" href="#__codelineno-132-5"></a>        <span class="s2">&quot;ResourceId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-132-6" name="__codelineno-132-6" href="#__codelineno-132-6"></a>        <span class="s2">&quot;Validation&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-132-7" name="__codelineno-132-7" href="#__codelineno-132-7"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-134-1" name="__codelineno-134-1" href="#__codelineno-134-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">UpdateResolverDnssecConfigRequestRequestTypeDef</span>
+<a id="__codelineno-134-2" name="__codelineno-134-2" href="#__codelineno-134-2"></a>
+<a id="__codelineno-134-3" name="__codelineno-134-3" href="#__codelineno-134-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateResolverDnssecConfigRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-134-4" name="__codelineno-134-4" href="#__codelineno-134-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-134-5" name="__codelineno-134-5" href="#__codelineno-134-5"></a>        <span class="s2">&quot;ResourceId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-134-6" name="__codelineno-134-6" href="#__codelineno-134-6"></a>        <span class="s2">&quot;Validation&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-134-7" name="__codelineno-134-7" href="#__codelineno-134-7"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-133-1" name="__codelineno-133-1" href="#__codelineno-133-1"></a><span class="k">class</span> <span class="nc">UpdateResolverDnssecConfigRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-133-2" name="__codelineno-133-2" href="#__codelineno-133-2"></a>    <span class="n">ResourceId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-133-3" name="__codelineno-133-3" href="#__codelineno-133-3"></a>    <span class="n">Validation</span><span class="p">:</span> <span class="n">ValidationType</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-135-1" name="__codelineno-135-1" href="#__codelineno-135-1"></a><span class="k">class</span> <span class="nc">UpdateResolverDnssecConfigRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-135-2" name="__codelineno-135-2" href="#__codelineno-135-2"></a>    <span class="n">ResourceId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-135-3" name="__codelineno-135-3" href="#__codelineno-135-3"></a>    <span class="n">Validation</span><span class="p">:</span> <span class="n">ValidationType</span><span class="p">,</span>  <span class="c1"># (1)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#validationtype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ValidationType</a> </li>
 </ol>
-<h2 id="updateresolverendpointrequestrequesttypedef">UpdateResolverEndpointRequestRequestTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-134-1" name="__codelineno-134-1" href="#__codelineno-134-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">UpdateResolverEndpointRequestRequestTypeDef</span>
-<a id="__codelineno-134-2" name="__codelineno-134-2" href="#__codelineno-134-2"></a>
-<a id="__codelineno-134-3" name="__codelineno-134-3" href="#__codelineno-134-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateResolverEndpointRequestRequestTypeDef</span><span class="p">:</span>
-<a id="__codelineno-134-4" name="__codelineno-134-4" href="#__codelineno-134-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-134-5" name="__codelineno-134-5" href="#__codelineno-134-5"></a>        <span class="s2">&quot;ResolverEndpointId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-134-6" name="__codelineno-134-6" href="#__codelineno-134-6"></a>    <span class="p">}</span>
-</code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-135-1" name="__codelineno-135-1" href="#__codelineno-135-1"></a><span class="k">class</span> <span class="nc">UpdateResolverEndpointRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-135-2" name="__codelineno-135-2" href="#__codelineno-135-2"></a>    <span class="n">ResolverEndpointId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-135-3" name="__codelineno-135-3" href="#__codelineno-135-3"></a>    <span class="n">Name</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-</code></pre></div>
 <h2 id="associatefirewallrulegrouprequestrequesttypedef">AssociateFirewallRuleGroupRequestRequestTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-136-1" name="__codelineno-136-1" href="#__codelineno-136-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">AssociateFirewallRuleGroupRequestRequestTypeDef</span>
 <a id="__codelineno-136-2" name="__codelineno-136-2" href="#__codelineno-136-2"></a>
@@ -44627,11 +44648,13 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-route
 <a id="__codelineno-231-5" name="__codelineno-231-5" href="#__codelineno-231-5"></a>    <span class="n">IpAddresses</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">IpAddressRequestTypeDef</span><span class="p">],</span>  <span class="c1"># (2)</span>
 <a id="__codelineno-231-6" name="__codelineno-231-6" href="#__codelineno-231-6"></a>    <span class="n">Name</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-231-7" name="__codelineno-231-7" href="#__codelineno-231-7"></a>    <span class="n">Tags</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="n">TagTypeDef</span><span class="p">]],</span>  <span class="c1"># (3)</span>
+<a id="__codelineno-231-8" name="__codelineno-231-8" href="#__codelineno-231-8"></a>    <span class="n">ResolverEndpointType</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">ResolverEndpointTypeType</span><span class="p">],</span>  <span class="c1"># (4)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#resolverendpointdirectiontype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ResolverEndpointDirectionType</a> </li>
 <li>See <a href="./#ipaddressrequesttypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> IpAddressRequestTypeDef</a> </li>
 <li>See <a href="./#tagtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> TagTypeDef</a> </li>
+<li>See <a href="../literals/#resolverendpointtypetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ResolverEndpointTypeType</a> </li>
 </ol>
 <h2 id="createresolverquerylogconfigresponsetypedef">CreateResolverQueryLogConfigResponseTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-232-1" name="__codelineno-232-1" href="#__codelineno-232-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">CreateResolverQueryLogConfigResponseTypeDef</span>
@@ -45337,49 +45360,50 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-route
 <ol>
 <li>See <a href="./#paginatorconfigtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> PaginatorConfigTypeDef</a> </li>
 </ol>
-<h2 id="updateresolverrulerequestrequesttypedef">UpdateResolverRuleRequestRequestTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-312-1" name="__codelineno-312-1" href="#__codelineno-312-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">UpdateResolverRuleRequestRequestTypeDef</span>
+<h2 id="updateresolverendpointrequestrequesttypedef">UpdateResolverEndpointRequestRequestTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-312-1" name="__codelineno-312-1" href="#__codelineno-312-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">UpdateResolverEndpointRequestRequestTypeDef</span>
 <a id="__codelineno-312-2" name="__codelineno-312-2" href="#__codelineno-312-2"></a>
-<a id="__codelineno-312-3" name="__codelineno-312-3" href="#__codelineno-312-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateResolverRuleRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-312-3" name="__codelineno-312-3" href="#__codelineno-312-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateResolverEndpointRequestRequestTypeDef</span><span class="p">:</span>
 <a id="__codelineno-312-4" name="__codelineno-312-4" href="#__codelineno-312-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-312-5" name="__codelineno-312-5" href="#__codelineno-312-5"></a>        <span class="s2">&quot;ResolverRuleId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-312-6" name="__codelineno-312-6" href="#__codelineno-312-6"></a>        <span class="s2">&quot;Config&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-312-7" name="__codelineno-312-7" href="#__codelineno-312-7"></a>    <span class="p">}</span>
+<a id="__codelineno-312-5" name="__codelineno-312-5" href="#__codelineno-312-5"></a>        <span class="s2">&quot;ResolverEndpointId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-312-6" name="__codelineno-312-6" href="#__codelineno-312-6"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-313-1" name="__codelineno-313-1" href="#__codelineno-313-1"></a><span class="k">class</span> <span class="nc">UpdateResolverRuleRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-313-2" name="__codelineno-313-2" href="#__codelineno-313-2"></a>    <span class="n">ResolverRuleId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-313-3" name="__codelineno-313-3" href="#__codelineno-313-3"></a>    <span class="n">Config</span><span class="p">:</span> <span class="n">ResolverRuleConfigTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-313-1" name="__codelineno-313-1" href="#__codelineno-313-1"></a><span class="k">class</span> <span class="nc">UpdateResolverEndpointRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-313-2" name="__codelineno-313-2" href="#__codelineno-313-2"></a>    <span class="n">ResolverEndpointId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-313-3" name="__codelineno-313-3" href="#__codelineno-313-3"></a>    <span class="n">Name</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-313-4" name="__codelineno-313-4" href="#__codelineno-313-4"></a>    <span class="n">ResolverEndpointType</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">ResolverEndpointTypeType</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-313-5" name="__codelineno-313-5" href="#__codelineno-313-5"></a>    <span class="n">UpdateIpAddresses</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="n">UpdateIpAddressTypeDef</span><span class="p">]],</span>  <span class="c1"># (2)</span>
+</code></pre></div>
+<ol>
+<li>See <a href="../literals/#resolverendpointtypetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ResolverEndpointTypeType</a> </li>
+<li>See <a href="./#updateipaddresstypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> UpdateIpAddressTypeDef</a> </li>
+</ol>
+<h2 id="updateresolverrulerequestrequesttypedef">UpdateResolverRuleRequestRequestTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-314-1" name="__codelineno-314-1" href="#__codelineno-314-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">UpdateResolverRuleRequestRequestTypeDef</span>
+<a id="__codelineno-314-2" name="__codelineno-314-2" href="#__codelineno-314-2"></a>
+<a id="__codelineno-314-3" name="__codelineno-314-3" href="#__codelineno-314-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateResolverRuleRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-314-4" name="__codelineno-314-4" href="#__codelineno-314-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-314-5" name="__codelineno-314-5" href="#__codelineno-314-5"></a>        <span class="s2">&quot;ResolverRuleId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-314-6" name="__codelineno-314-6" href="#__codelineno-314-6"></a>        <span class="s2">&quot;Config&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-314-7" name="__codelineno-314-7" href="#__codelineno-314-7"></a>    <span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-315-1" name="__codelineno-315-1" href="#__codelineno-315-1"></a><span class="k">class</span> <span class="nc">UpdateResolverRuleRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-315-2" name="__codelineno-315-2" href="#__codelineno-315-2"></a>    <span class="n">ResolverRuleId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-315-3" name="__codelineno-315-3" href="#__codelineno-315-3"></a>    <span class="n">Config</span><span class="p">:</span> <span class="n">ResolverRuleConfigTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#resolverruleconfigtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResolverRuleConfigTypeDef</a> </li>
 </ol>
 <h2 id="createresolverruleresponsetypedef">CreateResolverRuleResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-314-1" name="__codelineno-314-1" href="#__codelineno-314-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">CreateResolverRuleResponseTypeDef</span>
-<a id="__codelineno-314-2" name="__codelineno-314-2" href="#__codelineno-314-2"></a>
-<a id="__codelineno-314-3" name="__codelineno-314-3" href="#__codelineno-314-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">CreateResolverRuleResponseTypeDef</span><span class="p">:</span>
-<a id="__codelineno-314-4" name="__codelineno-314-4" href="#__codelineno-314-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-314-5" name="__codelineno-314-5" href="#__codelineno-314-5"></a>        <span class="s2">&quot;ResolverRule&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-314-6" name="__codelineno-314-6" href="#__codelineno-314-6"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-314-7" name="__codelineno-314-7" href="#__codelineno-314-7"></a>    <span class="p">}</span>
-</code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-315-1" name="__codelineno-315-1" href="#__codelineno-315-1"></a><span class="k">class</span> <span class="nc">CreateResolverRuleResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-315-2" name="__codelineno-315-2" href="#__codelineno-315-2"></a>    <span class="n">ResolverRule</span><span class="p">:</span> <span class="n">ResolverRuleTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-315-3" name="__codelineno-315-3" href="#__codelineno-315-3"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
-</code></pre></div>
-<ol>
-<li>See <a href="./#resolverruletypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResolverRuleTypeDef</a> </li>
-<li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
-</ol>
-<h2 id="deleteresolverruleresponsetypedef">DeleteResolverRuleResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-316-1" name="__codelineno-316-1" href="#__codelineno-316-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">DeleteResolverRuleResponseTypeDef</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-316-1" name="__codelineno-316-1" href="#__codelineno-316-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">CreateResolverRuleResponseTypeDef</span>
 <a id="__codelineno-316-2" name="__codelineno-316-2" href="#__codelineno-316-2"></a>
-<a id="__codelineno-316-3" name="__codelineno-316-3" href="#__codelineno-316-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DeleteResolverRuleResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-316-3" name="__codelineno-316-3" href="#__codelineno-316-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">CreateResolverRuleResponseTypeDef</span><span class="p">:</span>
 <a id="__codelineno-316-4" name="__codelineno-316-4" href="#__codelineno-316-4"></a>    <span class="k">return</span> <span class="p">{</span>
 <a id="__codelineno-316-5" name="__codelineno-316-5" href="#__codelineno-316-5"></a>        <span class="s2">&quot;ResolverRule&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-316-6" name="__codelineno-316-6" href="#__codelineno-316-6"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-316-7" name="__codelineno-316-7" href="#__codelineno-316-7"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-317-1" name="__codelineno-317-1" href="#__codelineno-317-1"></a><span class="k">class</span> <span class="nc">DeleteResolverRuleResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-317-1" name="__codelineno-317-1" href="#__codelineno-317-1"></a><span class="k">class</span> <span class="nc">CreateResolverRuleResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <a id="__codelineno-317-2" name="__codelineno-317-2" href="#__codelineno-317-2"></a>    <span class="n">ResolverRule</span><span class="p">:</span> <span class="n">ResolverRuleTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-317-3" name="__codelineno-317-3" href="#__codelineno-317-3"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
 </code></pre></div>
@@ -45387,16 +45411,16 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-route
 <li>See <a href="./#resolverruletypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResolverRuleTypeDef</a> </li>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
-<h2 id="getresolverruleresponsetypedef">GetResolverRuleResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-318-1" name="__codelineno-318-1" href="#__codelineno-318-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">GetResolverRuleResponseTypeDef</span>
+<h2 id="deleteresolverruleresponsetypedef">DeleteResolverRuleResponseTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-318-1" name="__codelineno-318-1" href="#__codelineno-318-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">DeleteResolverRuleResponseTypeDef</span>
 <a id="__codelineno-318-2" name="__codelineno-318-2" href="#__codelineno-318-2"></a>
-<a id="__codelineno-318-3" name="__codelineno-318-3" href="#__codelineno-318-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">GetResolverRuleResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-318-3" name="__codelineno-318-3" href="#__codelineno-318-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DeleteResolverRuleResponseTypeDef</span><span class="p">:</span>
 <a id="__codelineno-318-4" name="__codelineno-318-4" href="#__codelineno-318-4"></a>    <span class="k">return</span> <span class="p">{</span>
 <a id="__codelineno-318-5" name="__codelineno-318-5" href="#__codelineno-318-5"></a>        <span class="s2">&quot;ResolverRule&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-318-6" name="__codelineno-318-6" href="#__codelineno-318-6"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-318-7" name="__codelineno-318-7" href="#__codelineno-318-7"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-319-1" name="__codelineno-319-1" href="#__codelineno-319-1"></a><span class="k">class</span> <span class="nc">GetResolverRuleResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-319-1" name="__codelineno-319-1" href="#__codelineno-319-1"></a><span class="k">class</span> <span class="nc">DeleteResolverRuleResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <a id="__codelineno-319-2" name="__codelineno-319-2" href="#__codelineno-319-2"></a>    <span class="n">ResolverRule</span><span class="p">:</span> <span class="n">ResolverRuleTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-319-3" name="__codelineno-319-3" href="#__codelineno-319-3"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
 </code></pre></div>
@@ -45404,39 +45428,56 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-route
 <li>See <a href="./#resolverruletypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResolverRuleTypeDef</a> </li>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
-<h2 id="listresolverrulesresponsetypedef">ListResolverRulesResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-320-1" name="__codelineno-320-1" href="#__codelineno-320-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">ListResolverRulesResponseTypeDef</span>
+<h2 id="getresolverruleresponsetypedef">GetResolverRuleResponseTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-320-1" name="__codelineno-320-1" href="#__codelineno-320-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">GetResolverRuleResponseTypeDef</span>
 <a id="__codelineno-320-2" name="__codelineno-320-2" href="#__codelineno-320-2"></a>
-<a id="__codelineno-320-3" name="__codelineno-320-3" href="#__codelineno-320-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListResolverRulesResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-320-3" name="__codelineno-320-3" href="#__codelineno-320-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">GetResolverRuleResponseTypeDef</span><span class="p">:</span>
 <a id="__codelineno-320-4" name="__codelineno-320-4" href="#__codelineno-320-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-320-5" name="__codelineno-320-5" href="#__codelineno-320-5"></a>        <span class="s2">&quot;NextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-320-6" name="__codelineno-320-6" href="#__codelineno-320-6"></a>        <span class="s2">&quot;MaxResults&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-320-7" name="__codelineno-320-7" href="#__codelineno-320-7"></a>        <span class="s2">&quot;ResolverRules&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-320-8" name="__codelineno-320-8" href="#__codelineno-320-8"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-320-9" name="__codelineno-320-9" href="#__codelineno-320-9"></a>    <span class="p">}</span>
+<a id="__codelineno-320-5" name="__codelineno-320-5" href="#__codelineno-320-5"></a>        <span class="s2">&quot;ResolverRule&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-320-6" name="__codelineno-320-6" href="#__codelineno-320-6"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-320-7" name="__codelineno-320-7" href="#__codelineno-320-7"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-321-1" name="__codelineno-321-1" href="#__codelineno-321-1"></a><span class="k">class</span> <span class="nc">ListResolverRulesResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-321-2" name="__codelineno-321-2" href="#__codelineno-321-2"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-321-3" name="__codelineno-321-3" href="#__codelineno-321-3"></a>    <span class="n">MaxResults</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
-<a id="__codelineno-321-4" name="__codelineno-321-4" href="#__codelineno-321-4"></a>    <span class="n">ResolverRules</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">ResolverRuleTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-321-5" name="__codelineno-321-5" href="#__codelineno-321-5"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-321-1" name="__codelineno-321-1" href="#__codelineno-321-1"></a><span class="k">class</span> <span class="nc">GetResolverRuleResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-321-2" name="__codelineno-321-2" href="#__codelineno-321-2"></a>    <span class="n">ResolverRule</span><span class="p">:</span> <span class="n">ResolverRuleTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-321-3" name="__codelineno-321-3" href="#__codelineno-321-3"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
+</code></pre></div>
+<ol>
+<li>See <a href="./#resolverruletypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResolverRuleTypeDef</a> </li>
+<li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
+</ol>
+<h2 id="listresolverrulesresponsetypedef">ListResolverRulesResponseTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-322-1" name="__codelineno-322-1" href="#__codelineno-322-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">ListResolverRulesResponseTypeDef</span>
+<a id="__codelineno-322-2" name="__codelineno-322-2" href="#__codelineno-322-2"></a>
+<a id="__codelineno-322-3" name="__codelineno-322-3" href="#__codelineno-322-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListResolverRulesResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-322-4" name="__codelineno-322-4" href="#__codelineno-322-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-322-5" name="__codelineno-322-5" href="#__codelineno-322-5"></a>        <span class="s2">&quot;NextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-322-6" name="__codelineno-322-6" href="#__codelineno-322-6"></a>        <span class="s2">&quot;MaxResults&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-322-7" name="__codelineno-322-7" href="#__codelineno-322-7"></a>        <span class="s2">&quot;ResolverRules&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-322-8" name="__codelineno-322-8" href="#__codelineno-322-8"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-322-9" name="__codelineno-322-9" href="#__codelineno-322-9"></a>    <span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-323-1" name="__codelineno-323-1" href="#__codelineno-323-1"></a><span class="k">class</span> <span class="nc">ListResolverRulesResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-323-2" name="__codelineno-323-2" href="#__codelineno-323-2"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-323-3" name="__codelineno-323-3" href="#__codelineno-323-3"></a>    <span class="n">MaxResults</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+<a id="__codelineno-323-4" name="__codelineno-323-4" href="#__codelineno-323-4"></a>    <span class="n">ResolverRules</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">ResolverRuleTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-323-5" name="__codelineno-323-5" href="#__codelineno-323-5"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#resolverruletypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResolverRuleTypeDef</a> </li>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
 <h2 id="updateresolverruleresponsetypedef">UpdateResolverRuleResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-322-1" name="__codelineno-322-1" href="#__codelineno-322-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">UpdateResolverRuleResponseTypeDef</span>
-<a id="__codelineno-322-2" name="__codelineno-322-2" href="#__codelineno-322-2"></a>
-<a id="__codelineno-322-3" name="__codelineno-322-3" href="#__codelineno-322-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateResolverRuleResponseTypeDef</span><span class="p">:</span>
-<a id="__codelineno-322-4" name="__codelineno-322-4" href="#__codelineno-322-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-322-5" name="__codelineno-322-5" href="#__codelineno-322-5"></a>        <span class="s2">&quot;ResolverRule&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-322-6" name="__codelineno-322-6" href="#__codelineno-322-6"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-322-7" name="__codelineno-322-7" href="#__codelineno-322-7"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-324-1" name="__codelineno-324-1" href="#__codelineno-324-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">UpdateResolverRuleResponseTypeDef</span>
+<a id="__codelineno-324-2" name="__codelineno-324-2" href="#__codelineno-324-2"></a>
+<a id="__codelineno-324-3" name="__codelineno-324-3" href="#__codelineno-324-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateResolverRuleResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-324-4" name="__codelineno-324-4" href="#__codelineno-324-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-324-5" name="__codelineno-324-5" href="#__codelineno-324-5"></a>        <span class="s2">&quot;ResolverRule&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-324-6" name="__codelineno-324-6" href="#__codelineno-324-6"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-324-7" name="__codelineno-324-7" href="#__codelineno-324-7"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-323-1" name="__codelineno-323-1" href="#__codelineno-323-1"></a><span class="k">class</span> <span class="nc">UpdateResolverRuleResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-323-2" name="__codelineno-323-2" href="#__codelineno-323-2"></a>    <span class="n">ResolverRule</span><span class="p">:</span> <span class="n">ResolverRuleTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-323-3" name="__codelineno-323-3" href="#__codelineno-323-3"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-325-1" name="__codelineno-325-1" href="#__codelineno-325-1"></a><span class="k">class</span> <span class="nc">UpdateResolverRuleResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-325-2" name="__codelineno-325-2" href="#__codelineno-325-2"></a>    <span class="n">ResolverRule</span><span class="p">:</span> <span class="n">ResolverRuleTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-325-3" name="__codelineno-325-3" href="#__codelineno-325-3"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#resolverruletypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResolverRuleTypeDef</a> </li>

@@ -95,6 +95,7 @@ class IpAddressUpdateTypeDef(TypedDict):
     IpId: NotRequired[str],
     SubnetId: NotRequired[str],
     Ip: NotRequired[str],
+    Ipv6: NotRequired[str],
 ```
 
 ## ResolverEndpointTypeDef
@@ -122,10 +123,12 @@ class ResolverEndpointTypeDef(TypedDict):
     StatusMessage: NotRequired[str],
     CreationTime: NotRequired[str],
     ModificationTime: NotRequired[str],
+    ResolverEndpointType: NotRequired[ResolverEndpointTypeType],  # (3)
 ```
 
 1. See [:material-code-brackets: ResolverEndpointDirectionType](./literals.md#resolverendpointdirectiontype) 
 2. See [:material-code-brackets: ResolverEndpointStatusType](./literals.md#resolverendpointstatustype) 
+3. See [:material-code-brackets: ResolverEndpointTypeType](./literals.md#resolverendpointtypetype) 
 ## AssociateResolverQueryLogConfigRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -341,6 +344,7 @@ def get_value() -> IpAddressRequestTypeDef:
 class IpAddressRequestTypeDef(TypedDict):
     SubnetId: str,
     Ip: NotRequired[str],
+    Ipv6: NotRequired[str],
 ```
 
 ## ResolverQueryLogConfigTypeDef
@@ -383,8 +387,9 @@ def get_value() -> TargetAddressTypeDef:
 
 ```python title="Definition"
 class TargetAddressTypeDef(TypedDict):
-    Ip: str,
+    Ip: NotRequired[str],
     Port: NotRequired[int],
+    Ipv6: NotRequired[str],
 ```
 
 ## DeleteFirewallDomainListRequestRequestTypeDef
@@ -917,6 +922,7 @@ class IpAddressResponseTypeDef(TypedDict):
     IpId: NotRequired[str],
     SubnetId: NotRequired[str],
     Ip: NotRequired[str],
+    Ipv6: NotRequired[str],
     Status: NotRequired[IpAddressStatusType],  # (1)
     StatusMessage: NotRequired[str],
     CreationTime: NotRequired[str],
@@ -1267,6 +1273,24 @@ class UpdateFirewallRuleRequestRequestTypeDef(TypedDict):
 1. See [:material-code-brackets: ActionType](./literals.md#actiontype) 
 2. See [:material-code-brackets: BlockResponseType](./literals.md#blockresponsetype) 
 3. See [:material-code-brackets: BlockOverrideDnsTypeType](./literals.md#blockoverridednstypetype) 
+## UpdateIpAddressTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import UpdateIpAddressTypeDef
+
+def get_value() -> UpdateIpAddressTypeDef:
+    return {
+        "IpId": ...,
+        "Ipv6": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateIpAddressTypeDef(TypedDict):
+    IpId: str,
+    Ipv6: str,
+```
+
 ## UpdateResolverConfigRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1305,23 +1329,6 @@ class UpdateResolverDnssecConfigRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ValidationType](./literals.md#validationtype) 
-## UpdateResolverEndpointRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import UpdateResolverEndpointRequestRequestTypeDef
-
-def get_value() -> UpdateResolverEndpointRequestRequestTypeDef:
-    return {
-        "ResolverEndpointId": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateResolverEndpointRequestRequestTypeDef(TypedDict):
-    ResolverEndpointId: str,
-    Name: NotRequired[str],
-```
-
 ## AssociateFirewallRuleGroupRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2318,11 +2325,13 @@ class CreateResolverEndpointRequestRequestTypeDef(TypedDict):
     IpAddresses: Sequence[IpAddressRequestTypeDef],  # (2)
     Name: NotRequired[str],
     Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    ResolverEndpointType: NotRequired[ResolverEndpointTypeType],  # (4)
 ```
 
 1. See [:material-code-brackets: ResolverEndpointDirectionType](./literals.md#resolverendpointdirectiontype) 
 2. See [:material-code-braces: IpAddressRequestTypeDef](./type_defs.md#ipaddressrequesttypedef) 
 3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-brackets: ResolverEndpointTypeType](./literals.md#resolverendpointtypetype) 
 ## CreateResolverQueryLogConfigResponseTypeDef
 
 ```python title="Usage Example"
@@ -3147,6 +3156,27 @@ class ListTagsForResourceRequestListTagsForResourcePaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## UpdateResolverEndpointRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import UpdateResolverEndpointRequestRequestTypeDef
+
+def get_value() -> UpdateResolverEndpointRequestRequestTypeDef:
+    return {
+        "ResolverEndpointId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateResolverEndpointRequestRequestTypeDef(TypedDict):
+    ResolverEndpointId: str,
+    Name: NotRequired[str],
+    ResolverEndpointType: NotRequired[ResolverEndpointTypeType],  # (1)
+    UpdateIpAddresses: NotRequired[Sequence[UpdateIpAddressTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: ResolverEndpointTypeType](./literals.md#resolverendpointtypetype) 
+2. See [:material-code-braces: UpdateIpAddressTypeDef](./type_defs.md#updateipaddresstypedef) 
 ## UpdateResolverRuleRequestRequestTypeDef
 
 ```python title="Usage Example"

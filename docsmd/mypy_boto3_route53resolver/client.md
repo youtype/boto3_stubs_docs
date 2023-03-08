@@ -363,14 +363,16 @@ def create_resolver_endpoint(
     IpAddresses: Sequence[IpAddressRequestTypeDef],  # (2)
     Name: str = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (3)
-) -> CreateResolverEndpointResponseTypeDef:  # (4)
+    ResolverEndpointType: ResolverEndpointTypeType = ...,  # (4)
+) -> CreateResolverEndpointResponseTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-brackets: ResolverEndpointDirectionType](./literals.md#resolverendpointdirectiontype) 
 2. See [:material-code-braces: IpAddressRequestTypeDef](./type_defs.md#ipaddressrequesttypedef) 
 3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-4. See [:material-code-braces: CreateResolverEndpointResponseTypeDef](./type_defs.md#createresolverendpointresponsetypedef) 
+4. See [:material-code-brackets: ResolverEndpointTypeType](./literals.md#resolverendpointtypetype) 
+5. See [:material-code-braces: CreateResolverEndpointResponseTypeDef](./type_defs.md#createresolverendpointresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2092,7 +2094,8 @@ parent.update_resolver_dnssec_config(**kwargs)
 
 ### update\_resolver\_endpoint
 
-Updates the name of an inbound or an outbound Resolver endpoint.
+Updates the name, or enpoint type for an inbound or an outbound Resolver
+endpoint.
 
 Type annotations and code completion for `#!python boto3.client("route53resolver").update_resolver_endpoint` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_endpoint)
@@ -2103,11 +2106,15 @@ def update_resolver_endpoint(
     *,
     ResolverEndpointId: str,
     Name: str = ...,
-) -> UpdateResolverEndpointResponseTypeDef:  # (1)
+    ResolverEndpointType: ResolverEndpointTypeType = ...,  # (1)
+    UpdateIpAddresses: Sequence[UpdateIpAddressTypeDef] = ...,  # (2)
+) -> UpdateResolverEndpointResponseTypeDef:  # (3)
     ...
 ```
 
-1. See [:material-code-braces: UpdateResolverEndpointResponseTypeDef](./type_defs.md#updateresolverendpointresponsetypedef) 
+1. See [:material-code-brackets: ResolverEndpointTypeType](./literals.md#resolverendpointtypetype) 
+2. See [:material-code-braces: UpdateIpAddressTypeDef](./type_defs.md#updateipaddresstypedef) 
+3. See [:material-code-braces: UpdateResolverEndpointResponseTypeDef](./type_defs.md#updateresolverendpointresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

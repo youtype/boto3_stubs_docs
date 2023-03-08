@@ -36,6 +36,7 @@ def get_value() -> AutodefinedReverseFlagType:
 AutodefinedReverseFlagType = Literal[
     "DISABLE",
     "ENABLE",
+    "USE_LOCAL_RESOURCE_SETTING",
 ]
 ```
 ## BlockOverrideDnsTypeType
@@ -129,6 +130,7 @@ def get_value() -> FirewallFailOpenStatusType:
 FirewallFailOpenStatusType = Literal[
     "DISABLED",
     "ENABLED",
+    "USE_LOCAL_RESOURCE_SETTING",
 ]
 ```
 ## FirewallRuleGroupAssociationStatusType
@@ -184,6 +186,7 @@ IpAddressStatusType = Literal[
     "FAILED_RESOURCE_GONE",
     "REMAP_ATTACHING",
     "REMAP_DETACHING",
+    "UPDATING",
 ]
 ```
 ## ListFirewallConfigsPaginatorName
@@ -426,6 +429,8 @@ ResolverAutodefinedReverseStatusType = Literal[
     "DISABLING",
     "ENABLED",
     "ENABLING",
+    "UPDATING_TO_USE_LOCAL_RESOURCE_SETTING",
+    "USE_LOCAL_RESOURCE_SETTING",
 ]
 ```
 ## ResolverDNSSECValidationStatusType
@@ -443,6 +448,8 @@ ResolverDNSSECValidationStatusType = Literal[
     "DISABLING",
     "ENABLED",
     "ENABLING",
+    "UPDATING_TO_USE_LOCAL_RESOURCE_SETTING",
+    "USE_LOCAL_RESOURCE_SETTING",
 ]
 ```
 ## ResolverEndpointDirectionType
@@ -477,6 +484,22 @@ ResolverEndpointStatusType = Literal[
     "DELETING",
     "OPERATIONAL",
     "UPDATING",
+]
+```
+## ResolverEndpointTypeType
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.literals import ResolverEndpointTypeType
+
+def get_value() -> ResolverEndpointTypeType:
+    return "DUALSTACK"
+```
+
+```python title="Definition"
+ResolverEndpointTypeType = Literal[
+    "DUALSTACK",
+    "IPV4",
+    "IPV6",
 ]
 ```
 ## ResolverQueryLogConfigAssociationErrorType
@@ -626,6 +649,7 @@ def get_value() -> ValidationType:
 ValidationType = Literal[
     "DISABLE",
     "ENABLE",
+    "USE_LOCAL_RESOURCE_SETTING",
 ]
 ```
 ## Route53ResolverServiceName

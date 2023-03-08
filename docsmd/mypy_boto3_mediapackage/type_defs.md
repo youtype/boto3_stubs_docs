@@ -880,6 +880,7 @@ def get_value() -> ChannelTypeDef:
 ```python title="Definition"
 class ChannelTypeDef(TypedDict):
     Arn: NotRequired[str],
+    CreatedAt: NotRequired[str],
     Description: NotRequired[str],
     EgressAccessLogs: NotRequired[EgressAccessLogsTypeDef],  # (1)
     HlsIngest: NotRequired[HlsIngestTypeDef],  # (2)
@@ -899,6 +900,7 @@ from mypy_boto3_mediapackage.type_defs import ConfigureLogsResponseTypeDef
 def get_value() -> ConfigureLogsResponseTypeDef:
     return {
         "Arn": ...,
+        "CreatedAt": ...,
         "Description": ...,
         "EgressAccessLogs": ...,
         "HlsIngest": ...,
@@ -912,6 +914,7 @@ def get_value() -> ConfigureLogsResponseTypeDef:
 ```python title="Definition"
 class ConfigureLogsResponseTypeDef(TypedDict):
     Arn: str,
+    CreatedAt: str,
     Description: str,
     EgressAccessLogs: EgressAccessLogsTypeDef,  # (1)
     HlsIngest: HlsIngestTypeDef,  # (2)
@@ -933,6 +936,7 @@ from mypy_boto3_mediapackage.type_defs import CreateChannelResponseTypeDef
 def get_value() -> CreateChannelResponseTypeDef:
     return {
         "Arn": ...,
+        "CreatedAt": ...,
         "Description": ...,
         "EgressAccessLogs": ...,
         "HlsIngest": ...,
@@ -946,6 +950,7 @@ def get_value() -> CreateChannelResponseTypeDef:
 ```python title="Definition"
 class CreateChannelResponseTypeDef(TypedDict):
     Arn: str,
+    CreatedAt: str,
     Description: str,
     EgressAccessLogs: EgressAccessLogsTypeDef,  # (1)
     HlsIngest: HlsIngestTypeDef,  # (2)
@@ -967,6 +972,7 @@ from mypy_boto3_mediapackage.type_defs import DescribeChannelResponseTypeDef
 def get_value() -> DescribeChannelResponseTypeDef:
     return {
         "Arn": ...,
+        "CreatedAt": ...,
         "Description": ...,
         "EgressAccessLogs": ...,
         "HlsIngest": ...,
@@ -980,6 +986,7 @@ def get_value() -> DescribeChannelResponseTypeDef:
 ```python title="Definition"
 class DescribeChannelResponseTypeDef(TypedDict):
     Arn: str,
+    CreatedAt: str,
     Description: str,
     EgressAccessLogs: EgressAccessLogsTypeDef,  # (1)
     HlsIngest: HlsIngestTypeDef,  # (2)
@@ -1001,6 +1008,7 @@ from mypy_boto3_mediapackage.type_defs import RotateChannelCredentialsResponseTy
 def get_value() -> RotateChannelCredentialsResponseTypeDef:
     return {
         "Arn": ...,
+        "CreatedAt": ...,
         "Description": ...,
         "EgressAccessLogs": ...,
         "HlsIngest": ...,
@@ -1014,6 +1022,7 @@ def get_value() -> RotateChannelCredentialsResponseTypeDef:
 ```python title="Definition"
 class RotateChannelCredentialsResponseTypeDef(TypedDict):
     Arn: str,
+    CreatedAt: str,
     Description: str,
     EgressAccessLogs: EgressAccessLogsTypeDef,  # (1)
     HlsIngest: HlsIngestTypeDef,  # (2)
@@ -1035,6 +1044,7 @@ from mypy_boto3_mediapackage.type_defs import RotateIngestEndpointCredentialsRes
 def get_value() -> RotateIngestEndpointCredentialsResponseTypeDef:
     return {
         "Arn": ...,
+        "CreatedAt": ...,
         "Description": ...,
         "EgressAccessLogs": ...,
         "HlsIngest": ...,
@@ -1048,6 +1058,7 @@ def get_value() -> RotateIngestEndpointCredentialsResponseTypeDef:
 ```python title="Definition"
 class RotateIngestEndpointCredentialsResponseTypeDef(TypedDict):
     Arn: str,
+    CreatedAt: str,
     Description: str,
     EgressAccessLogs: EgressAccessLogsTypeDef,  # (1)
     HlsIngest: HlsIngestTypeDef,  # (2)
@@ -1069,6 +1080,7 @@ from mypy_boto3_mediapackage.type_defs import UpdateChannelResponseTypeDef
 def get_value() -> UpdateChannelResponseTypeDef:
     return {
         "Arn": ...,
+        "CreatedAt": ...,
         "Description": ...,
         "EgressAccessLogs": ...,
         "HlsIngest": ...,
@@ -1082,6 +1094,7 @@ def get_value() -> UpdateChannelResponseTypeDef:
 ```python title="Definition"
 class UpdateChannelResponseTypeDef(TypedDict):
     Arn: str,
+    CreatedAt: str,
     Description: str,
     EgressAccessLogs: EgressAccessLogsTypeDef,  # (1)
     HlsIngest: HlsIngestTypeDef,  # (2)
@@ -1304,6 +1317,7 @@ def get_value() -> CreateOriginEndpointResponseTypeDef:
         "Authorization": ...,
         "ChannelId": ...,
         "CmafPackage": ...,
+        "CreatedAt": ...,
         "DashPackage": ...,
         "Description": ...,
         "HlsPackage": ...,
@@ -1326,6 +1340,7 @@ class CreateOriginEndpointResponseTypeDef(TypedDict):
     Authorization: AuthorizationTypeDef,  # (1)
     ChannelId: str,
     CmafPackage: CmafPackageTypeDef,  # (2)
+    CreatedAt: str,
     DashPackage: DashPackageTypeDef,  # (3)
     Description: str,
     HlsPackage: HlsPackageTypeDef,  # (4)
@@ -1359,6 +1374,7 @@ def get_value() -> DescribeOriginEndpointResponseTypeDef:
         "Authorization": ...,
         "ChannelId": ...,
         "CmafPackage": ...,
+        "CreatedAt": ...,
         "DashPackage": ...,
         "Description": ...,
         "HlsPackage": ...,
@@ -1381,6 +1397,7 @@ class DescribeOriginEndpointResponseTypeDef(TypedDict):
     Authorization: AuthorizationTypeDef,  # (1)
     ChannelId: str,
     CmafPackage: CmafPackageTypeDef,  # (2)
+    CreatedAt: str,
     DashPackage: DashPackageTypeDef,  # (3)
     Description: str,
     HlsPackage: HlsPackageTypeDef,  # (4)
@@ -1420,6 +1437,7 @@ class OriginEndpointTypeDef(TypedDict):
     Authorization: NotRequired[AuthorizationTypeDef],  # (1)
     ChannelId: NotRequired[str],
     CmafPackage: NotRequired[CmafPackageTypeDef],  # (2)
+    CreatedAt: NotRequired[str],
     DashPackage: NotRequired[DashPackageTypeDef],  # (3)
     Description: NotRequired[str],
     HlsPackage: NotRequired[HlsPackageTypeDef],  # (4)
@@ -1484,6 +1502,7 @@ def get_value() -> UpdateOriginEndpointResponseTypeDef:
         "Authorization": ...,
         "ChannelId": ...,
         "CmafPackage": ...,
+        "CreatedAt": ...,
         "DashPackage": ...,
         "Description": ...,
         "HlsPackage": ...,
@@ -1506,6 +1525,7 @@ class UpdateOriginEndpointResponseTypeDef(TypedDict):
     Authorization: AuthorizationTypeDef,  # (1)
     ChannelId: str,
     CmafPackage: CmafPackageTypeDef,  # (2)
+    CreatedAt: str,
     DashPackage: DashPackageTypeDef,  # (3)
     Description: str,
     HlsPackage: HlsPackageTypeDef,  # (4)

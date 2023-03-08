@@ -168,6 +168,7 @@ def create_table(
     SSESpecification: SSESpecificationServiceResourceTypeDef = ...,  # (8)
     Tags: Sequence[TagServiceResourceTypeDef] = ...,  # (9)
     TableClass: TableClassType = ...,  # (10)
+    DeletionProtectionEnabled: bool = ...,
 ) -> Table:
     ...
 ```
@@ -251,6 +252,7 @@ def get_resource() -> Table:
 - `sse_description`: [SSEDescriptionResponseMetadataTypeDef](./type_defs.md#ssedescriptionresponsemetadatatypedef)
 - `archival_summary`: [ArchivalSummaryResponseMetadataTypeDef](./type_defs.md#archivalsummaryresponsemetadatatypedef)
 - `table_class_summary`: [TableClassSummaryResponseMetadataTypeDef](./type_defs.md#tableclasssummaryresponsemetadatatypedef)
+- `deletion_protection_enabled`: `bool`
 - `name`: `str`
 
 
@@ -588,6 +590,7 @@ def update(
     SSESpecification: SSESpecificationTableTypeDef = ...,  # (6)
     ReplicaUpdates: Sequence[ReplicationGroupUpdateTableTypeDef] = ...,  # (7)
     TableClass: TableClassType = ...,  # (8)
+    DeletionProtectionEnabled: bool = ...,
 ) -> Table:
     ...
 ```

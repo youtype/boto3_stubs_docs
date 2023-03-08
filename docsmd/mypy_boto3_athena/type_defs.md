@@ -3136,6 +3136,7 @@ class QueryExecutionTypeDef(TypedDict):
     WorkGroup: NotRequired[str],
     EngineVersion: NotRequired[EngineVersionTypeDef],  # (7)
     ExecutionParameters: NotRequired[List[str]],
+    SubstatementType: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: StatementTypeType](./literals.md#statementtypetype) 

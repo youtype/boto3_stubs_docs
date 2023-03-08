@@ -505,6 +505,28 @@ class FilterConditionTypeDef(TypedDict):
 
 1. See [:material-code-brackets: FieldNameStringType](./literals.md#fieldnamestringtype) 
 2. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
+## GetDataCellsFilterRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lakeformation.type_defs import GetDataCellsFilterRequestRequestTypeDef
+
+def get_value() -> GetDataCellsFilterRequestRequestTypeDef:
+    return {
+        "TableCatalogId": ...,
+        "DatabaseName": ...,
+        "TableName": ...,
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class GetDataCellsFilterRequestRequestTypeDef(TypedDict):
+    TableCatalogId: str,
+    DatabaseName: str,
+    TableName: str,
+    Name: str,
+```
+
 ## GetDataLakeSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1359,6 +1381,7 @@ class DataCellsFilterTypeDef(TypedDict):
     RowFilter: NotRequired[RowFilterTypeDef],  # (1)
     ColumnNames: NotRequired[Sequence[str]],
     ColumnWildcard: NotRequired[ColumnWildcardTypeDef],  # (2)
+    VersionId: NotRequired[str],
 ```
 
 1. See [:material-code-braces: RowFilterTypeDef](./type_defs.md#rowfiltertypedef) 
@@ -1973,6 +1996,26 @@ class CreateDataCellsFilterRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DataCellsFilterTypeDef](./type_defs.md#datacellsfiltertypedef) 
+## GetDataCellsFilterResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lakeformation.type_defs import GetDataCellsFilterResponseTypeDef
+
+def get_value() -> GetDataCellsFilterResponseTypeDef:
+    return {
+        "DataCellsFilter": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDataCellsFilterResponseTypeDef(TypedDict):
+    DataCellsFilter: DataCellsFilterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DataCellsFilterTypeDef](./type_defs.md#datacellsfiltertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDataCellsFilterResponseTypeDef
 
 ```python title="Usage Example"
@@ -1995,6 +2038,23 @@ class ListDataCellsFilterResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DataCellsFilterTypeDef](./type_defs.md#datacellsfiltertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateDataCellsFilterRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lakeformation.type_defs import UpdateDataCellsFilterRequestRequestTypeDef
+
+def get_value() -> UpdateDataCellsFilterRequestRequestTypeDef:
+    return {
+        "TableData": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDataCellsFilterRequestRequestTypeDef(TypedDict):
+    TableData: DataCellsFilterTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: DataCellsFilterTypeDef](./type_defs.md#datacellsfiltertypedef) 
 ## SearchDatabasesByLFTagsResponseTypeDef
 
 ```python title="Usage Example"

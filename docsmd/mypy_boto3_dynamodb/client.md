@@ -296,6 +296,7 @@ def create_table(
     SSESpecification: SSESpecificationTypeDef = ...,  # (8)
     Tags: Sequence[TagTypeDef] = ...,  # (9)
     TableClass: TableClassType = ...,  # (10)
+    DeletionProtectionEnabled: bool = ...,
 ) -> CreateTableOutputTypeDef:  # (11)
     ...
 ```
@@ -1855,6 +1856,7 @@ def update_table(
     SSESpecification: SSESpecificationTypeDef = ...,  # (6)
     ReplicaUpdates: Sequence[ReplicationGroupUpdateTypeDef] = ...,  # (7)
     TableClass: TableClassType = ...,  # (8)
+    DeletionProtectionEnabled: bool = ...,
 ) -> UpdateTableOutputTypeDef:  # (9)
     ...
 ```

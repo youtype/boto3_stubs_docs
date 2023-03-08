@@ -278,24 +278,6 @@ class AssociateTrialComponentRequestRequestTypeDef(TypedDict):
     TrialName: str,
 ```
 
-## UserContextTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import UserContextTypeDef
-
-def get_value() -> UserContextTypeDef:
-    return {
-        "UserProfileArn": ...,
-    }
-```
-
-```python title="Definition"
-class UserContextTypeDef(TypedDict):
-    UserProfileArn: NotRequired[str],
-    UserProfileName: NotRequired[str],
-    DomainId: NotRequired[str],
-```
-
 ## AsyncInferenceClientConfigTypeDef
 
 ```python title="Usage Example"
@@ -5556,6 +5538,24 @@ def get_value() -> ParentHyperParameterTuningJobTypeDef:
 ```python title="Definition"
 class ParentHyperParameterTuningJobTypeDef(TypedDict):
     HyperParameterTuningJobName: NotRequired[str],
+```
+
+## IamIdentityTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import IamIdentityTypeDef
+
+def get_value() -> IamIdentityTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class IamIdentityTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    PrincipalId: NotRequired[str],
+    SourceIdentity: NotRequired[str],
 ```
 
 ## RepositoryAuthConfigTypeDef
@@ -12136,123 +12136,6 @@ class ArtifactSourceTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ArtifactSourceTypeTypeDef](./type_defs.md#artifactsourcetypetypedef) 
-## AssociationSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import AssociationSummaryTypeDef
-
-def get_value() -> AssociationSummaryTypeDef:
-    return {
-        "SourceArn": ...,
-    }
-```
-
-```python title="Definition"
-class AssociationSummaryTypeDef(TypedDict):
-    SourceArn: NotRequired[str],
-    DestinationArn: NotRequired[str],
-    SourceType: NotRequired[str],
-    DestinationType: NotRequired[str],
-    AssociationType: NotRequired[AssociationEdgeTypeType],  # (1)
-    SourceName: NotRequired[str],
-    DestinationName: NotRequired[str],
-    CreationTime: NotRequired[datetime],
-    CreatedBy: NotRequired[UserContextTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: AssociationEdgeTypeType](./literals.md#associationedgetypetype) 
-2. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-## DescribeLineageGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import DescribeLineageGroupResponseTypeDef
-
-def get_value() -> DescribeLineageGroupResponseTypeDef:
-    return {
-        "LineageGroupName": ...,
-        "LineageGroupArn": ...,
-        "DisplayName": ...,
-        "Description": ...,
-        "CreationTime": ...,
-        "CreatedBy": ...,
-        "LastModifiedTime": ...,
-        "LastModifiedBy": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeLineageGroupResponseTypeDef(TypedDict):
-    LineageGroupName: str,
-    LineageGroupArn: str,
-    DisplayName: str,
-    Description: str,
-    CreationTime: datetime,
-    CreatedBy: UserContextTypeDef,  # (1)
-    LastModifiedTime: datetime,
-    LastModifiedBy: UserContextTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-2. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeModelPackageGroupOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import DescribeModelPackageGroupOutputTypeDef
-
-def get_value() -> DescribeModelPackageGroupOutputTypeDef:
-    return {
-        "ModelPackageGroupName": ...,
-        "ModelPackageGroupArn": ...,
-        "ModelPackageGroupDescription": ...,
-        "CreationTime": ...,
-        "CreatedBy": ...,
-        "ModelPackageGroupStatus": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeModelPackageGroupOutputTypeDef(TypedDict):
-    ModelPackageGroupName: str,
-    ModelPackageGroupArn: str,
-    ModelPackageGroupDescription: str,
-    CreationTime: datetime,
-    CreatedBy: UserContextTypeDef,  # (1)
-    ModelPackageGroupStatus: ModelPackageGroupStatusType,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-2. See [:material-code-brackets: ModelPackageGroupStatusType](./literals.md#modelpackagegroupstatustype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ModelPackageGroupTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import ModelPackageGroupTypeDef
-
-def get_value() -> ModelPackageGroupTypeDef:
-    return {
-        "ModelPackageGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class ModelPackageGroupTypeDef(TypedDict):
-    ModelPackageGroupName: NotRequired[str],
-    ModelPackageGroupArn: NotRequired[str],
-    ModelPackageGroupDescription: NotRequired[str],
-    CreationTime: NotRequired[datetime],
-    CreatedBy: NotRequired[UserContextTypeDef],  # (1)
-    ModelPackageGroupStatus: NotRequired[ModelPackageGroupStatusType],  # (2)
-    Tags: NotRequired[List[TagTypeDef]],  # (3)
-```
-
-1. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-2. See [:material-code-brackets: ModelPackageGroupStatusType](./literals.md#modelpackagegroupstatustype) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## AsyncInferenceOutputConfigTypeDef
 
 ```python title="Usage Example"
@@ -12909,48 +12792,6 @@ class CreateContextRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: ContextSourceTypeDef](./type_defs.md#contextsourcetypedef) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## DescribeContextResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import DescribeContextResponseTypeDef
-
-def get_value() -> DescribeContextResponseTypeDef:
-    return {
-        "ContextName": ...,
-        "ContextArn": ...,
-        "Source": ...,
-        "ContextType": ...,
-        "Description": ...,
-        "Properties": ...,
-        "CreationTime": ...,
-        "CreatedBy": ...,
-        "LastModifiedTime": ...,
-        "LastModifiedBy": ...,
-        "LineageGroupArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeContextResponseTypeDef(TypedDict):
-    ContextName: str,
-    ContextArn: str,
-    Source: ContextSourceTypeDef,  # (1)
-    ContextType: str,
-    Description: str,
-    Properties: Dict[str, str],
-    CreationTime: datetime,
-    CreatedBy: UserContextTypeDef,  # (2)
-    LastModifiedTime: datetime,
-    LastModifiedBy: UserContextTypeDef,  # (2)
-    LineageGroupArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
-```
-
-1. See [:material-code-braces: ContextSourceTypeDef](./type_defs.md#contextsourcetypedef) 
-2. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TuningJobCompletionCriteriaTypeDef
 
 ```python title="Usage Example"
@@ -13023,54 +12864,6 @@ class CreateTrialRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## DescribeActionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import DescribeActionResponseTypeDef
-
-def get_value() -> DescribeActionResponseTypeDef:
-    return {
-        "ActionName": ...,
-        "ActionArn": ...,
-        "Source": ...,
-        "ActionType": ...,
-        "Description": ...,
-        "Status": ...,
-        "Properties": ...,
-        "CreationTime": ...,
-        "CreatedBy": ...,
-        "LastModifiedTime": ...,
-        "LastModifiedBy": ...,
-        "MetadataProperties": ...,
-        "LineageGroupArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeActionResponseTypeDef(TypedDict):
-    ActionName: str,
-    ActionArn: str,
-    Source: ActionSourceTypeDef,  # (1)
-    ActionType: str,
-    Description: str,
-    Status: ActionStatusType,  # (2)
-    Properties: Dict[str, str],
-    CreationTime: datetime,
-    CreatedBy: UserContextTypeDef,  # (3)
-    LastModifiedTime: datetime,
-    LastModifiedBy: UserContextTypeDef,  # (3)
-    MetadataProperties: MetadataPropertiesTypeDef,  # (5)
-    LineageGroupArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
-```
-
-1. See [:material-code-braces: ActionSourceTypeDef](./type_defs.md#actionsourcetypedef) 
-2. See [:material-code-brackets: ActionStatusType](./literals.md#actionstatustype) 
-3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-4. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-5. See [:material-code-braces: MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef) 
-6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateAppRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -13510,115 +13303,6 @@ class CreateModelCardRequestRequestTypeDef(TypedDict):
 1. See [:material-code-brackets: ModelCardStatusType](./literals.md#modelcardstatustype) 
 2. See [:material-code-braces: ModelCardSecurityConfigTypeDef](./type_defs.md#modelcardsecurityconfigtypedef) 
 3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## DescribeModelCardResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import DescribeModelCardResponseTypeDef
-
-def get_value() -> DescribeModelCardResponseTypeDef:
-    return {
-        "ModelCardArn": ...,
-        "ModelCardName": ...,
-        "ModelCardVersion": ...,
-        "Content": ...,
-        "ModelCardStatus": ...,
-        "SecurityConfig": ...,
-        "CreationTime": ...,
-        "CreatedBy": ...,
-        "LastModifiedTime": ...,
-        "LastModifiedBy": ...,
-        "ModelCardProcessingStatus": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeModelCardResponseTypeDef(TypedDict):
-    ModelCardArn: str,
-    ModelCardName: str,
-    ModelCardVersion: int,
-    Content: str,
-    ModelCardStatus: ModelCardStatusType,  # (1)
-    SecurityConfig: ModelCardSecurityConfigTypeDef,  # (2)
-    CreationTime: datetime,
-    CreatedBy: UserContextTypeDef,  # (3)
-    LastModifiedTime: datetime,
-    LastModifiedBy: UserContextTypeDef,  # (3)
-    ModelCardProcessingStatus: ModelCardProcessingStatusType,  # (5)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
-```
-
-1. See [:material-code-brackets: ModelCardStatusType](./literals.md#modelcardstatustype) 
-2. See [:material-code-braces: ModelCardSecurityConfigTypeDef](./type_defs.md#modelcardsecurityconfigtypedef) 
-3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-4. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-5. See [:material-code-brackets: ModelCardProcessingStatusType](./literals.md#modelcardprocessingstatustype) 
-6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ModelCardTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import ModelCardTypeDef
-
-def get_value() -> ModelCardTypeDef:
-    return {
-        "ModelCardArn": ...,
-    }
-```
-
-```python title="Definition"
-class ModelCardTypeDef(TypedDict):
-    ModelCardArn: NotRequired[str],
-    ModelCardName: NotRequired[str],
-    ModelCardVersion: NotRequired[int],
-    Content: NotRequired[str],
-    ModelCardStatus: NotRequired[ModelCardStatusType],  # (1)
-    SecurityConfig: NotRequired[ModelCardSecurityConfigTypeDef],  # (2)
-    CreationTime: NotRequired[datetime],
-    CreatedBy: NotRequired[UserContextTypeDef],  # (3)
-    LastModifiedTime: NotRequired[datetime],
-    LastModifiedBy: NotRequired[UserContextTypeDef],  # (3)
-    Tags: NotRequired[List[TagTypeDef]],  # (5)
-    ModelId: NotRequired[str],
-    RiskRating: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ModelCardStatusType](./literals.md#modelcardstatustype) 
-2. See [:material-code-braces: ModelCardSecurityConfigTypeDef](./type_defs.md#modelcardsecurityconfigtypedef) 
-3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-4. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## ModelDashboardModelCardTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import ModelDashboardModelCardTypeDef
-
-def get_value() -> ModelDashboardModelCardTypeDef:
-    return {
-        "ModelCardArn": ...,
-    }
-```
-
-```python title="Definition"
-class ModelDashboardModelCardTypeDef(TypedDict):
-    ModelCardArn: NotRequired[str],
-    ModelCardName: NotRequired[str],
-    ModelCardVersion: NotRequired[int],
-    ModelCardStatus: NotRequired[ModelCardStatusType],  # (1)
-    SecurityConfig: NotRequired[ModelCardSecurityConfigTypeDef],  # (2)
-    CreationTime: NotRequired[datetime],
-    CreatedBy: NotRequired[UserContextTypeDef],  # (3)
-    LastModifiedTime: NotRequired[datetime],
-    LastModifiedBy: NotRequired[UserContextTypeDef],  # (3)
-    Tags: NotRequired[List[TagTypeDef]],  # (5)
-    ModelId: NotRequired[str],
-    RiskRating: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ModelCardStatusType](./literals.md#modelcardstatustype) 
-2. See [:material-code-braces: ModelCardSecurityConfigTypeDef](./type_defs.md#modelcardsecurityconfigtypedef) 
-3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-4. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateNotebookInstanceInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -13829,86 +13513,6 @@ class UpdateNotebookInstanceLifecycleConfigInputRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef) 
 2. See [:material-code-braces: NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef) 
-## DescribePipelineResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import DescribePipelineResponseTypeDef
-
-def get_value() -> DescribePipelineResponseTypeDef:
-    return {
-        "PipelineArn": ...,
-        "PipelineName": ...,
-        "PipelineDisplayName": ...,
-        "PipelineDefinition": ...,
-        "PipelineDescription": ...,
-        "RoleArn": ...,
-        "PipelineStatus": ...,
-        "CreationTime": ...,
-        "LastModifiedTime": ...,
-        "LastRunTime": ...,
-        "CreatedBy": ...,
-        "LastModifiedBy": ...,
-        "ParallelismConfiguration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribePipelineResponseTypeDef(TypedDict):
-    PipelineArn: str,
-    PipelineName: str,
-    PipelineDisplayName: str,
-    PipelineDefinition: str,
-    PipelineDescription: str,
-    RoleArn: str,
-    PipelineStatus: PipelineStatusType,  # (1)
-    CreationTime: datetime,
-    LastModifiedTime: datetime,
-    LastRunTime: datetime,
-    CreatedBy: UserContextTypeDef,  # (2)
-    LastModifiedBy: UserContextTypeDef,  # (2)
-    ParallelismConfiguration: ParallelismConfigurationTypeDef,  # (4)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
-```
-
-1. See [:material-code-brackets: PipelineStatusType](./literals.md#pipelinestatustype) 
-2. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-4. See [:material-code-braces: ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PipelineTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import PipelineTypeDef
-
-def get_value() -> PipelineTypeDef:
-    return {
-        "PipelineArn": ...,
-    }
-```
-
-```python title="Definition"
-class PipelineTypeDef(TypedDict):
-    PipelineArn: NotRequired[str],
-    PipelineName: NotRequired[str],
-    PipelineDisplayName: NotRequired[str],
-    PipelineDescription: NotRequired[str],
-    RoleArn: NotRequired[str],
-    PipelineStatus: NotRequired[PipelineStatusType],  # (1)
-    CreationTime: NotRequired[datetime],
-    LastModifiedTime: NotRequired[datetime],
-    LastRunTime: NotRequired[datetime],
-    CreatedBy: NotRequired[UserContextTypeDef],  # (2)
-    LastModifiedBy: NotRequired[UserContextTypeDef],  # (2)
-    ParallelismConfiguration: NotRequired[ParallelismConfigurationTypeDef],  # (4)
-    Tags: NotRequired[List[TagTypeDef]],  # (5)
-```
-
-1. See [:material-code-brackets: PipelineStatusType](./literals.md#pipelinestatustype) 
-2. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-4. See [:material-code-braces: ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef) 
-5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## RetryPipelineExecutionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -14679,44 +14283,6 @@ class DescribeTransformJobRequestTransformJobCompletedOrStoppedWaitTypeDef(Typed
 ```
 
 1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
-## DescribeExperimentResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import DescribeExperimentResponseTypeDef
-
-def get_value() -> DescribeExperimentResponseTypeDef:
-    return {
-        "ExperimentName": ...,
-        "ExperimentArn": ...,
-        "DisplayName": ...,
-        "Source": ...,
-        "Description": ...,
-        "CreationTime": ...,
-        "CreatedBy": ...,
-        "LastModifiedTime": ...,
-        "LastModifiedBy": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeExperimentResponseTypeDef(TypedDict):
-    ExperimentName: str,
-    ExperimentArn: str,
-    DisplayName: str,
-    Source: ExperimentSourceTypeDef,  # (1)
-    Description: str,
-    CreationTime: datetime,
-    CreatedBy: UserContextTypeDef,  # (2)
-    LastModifiedTime: datetime,
-    LastModifiedBy: UserContextTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
-```
-
-1. See [:material-code-braces: ExperimentSourceTypeDef](./type_defs.md#experimentsourcetypedef) 
-2. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ExperimentSummaryTypeDef
 
 ```python title="Usage Example"
@@ -14739,35 +14305,6 @@ class ExperimentSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ExperimentSourceTypeDef](./type_defs.md#experimentsourcetypedef) 
-## ExperimentTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import ExperimentTypeDef
-
-def get_value() -> ExperimentTypeDef:
-    return {
-        "ExperimentName": ...,
-    }
-```
-
-```python title="Definition"
-class ExperimentTypeDef(TypedDict):
-    ExperimentName: NotRequired[str],
-    ExperimentArn: NotRequired[str],
-    DisplayName: NotRequired[str],
-    Source: NotRequired[ExperimentSourceTypeDef],  # (1)
-    Description: NotRequired[str],
-    CreationTime: NotRequired[datetime],
-    CreatedBy: NotRequired[UserContextTypeDef],  # (2)
-    LastModifiedTime: NotRequired[datetime],
-    LastModifiedBy: NotRequired[UserContextTypeDef],  # (2)
-    Tags: NotRequired[List[TagTypeDef]],  # (4)
-```
-
-1. See [:material-code-braces: ExperimentSourceTypeDef](./type_defs.md#experimentsourcetypedef) 
-2. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## FeatureGroupSummaryTypeDef
 
 ```python title="Usage Example"
@@ -15017,52 +14554,6 @@ class ListMonitoringExecutionsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: MonitoringExecutionSummaryTypeDef](./type_defs.md#monitoringexecutionsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribePipelineExecutionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import DescribePipelineExecutionResponseTypeDef
-
-def get_value() -> DescribePipelineExecutionResponseTypeDef:
-    return {
-        "PipelineArn": ...,
-        "PipelineExecutionArn": ...,
-        "PipelineExecutionDisplayName": ...,
-        "PipelineExecutionStatus": ...,
-        "PipelineExecutionDescription": ...,
-        "PipelineExperimentConfig": ...,
-        "FailureReason": ...,
-        "CreationTime": ...,
-        "LastModifiedTime": ...,
-        "CreatedBy": ...,
-        "LastModifiedBy": ...,
-        "ParallelismConfiguration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribePipelineExecutionResponseTypeDef(TypedDict):
-    PipelineArn: str,
-    PipelineExecutionArn: str,
-    PipelineExecutionDisplayName: str,
-    PipelineExecutionStatus: PipelineExecutionStatusType,  # (1)
-    PipelineExecutionDescription: str,
-    PipelineExperimentConfig: PipelineExperimentConfigTypeDef,  # (2)
-    FailureReason: str,
-    CreationTime: datetime,
-    LastModifiedTime: datetime,
-    CreatedBy: UserContextTypeDef,  # (3)
-    LastModifiedBy: UserContextTypeDef,  # (3)
-    ParallelismConfiguration: ParallelismConfigurationTypeDef,  # (5)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
-```
-
-1. See [:material-code-brackets: PipelineExecutionStatusType](./literals.md#pipelineexecutionstatustype) 
-2. See [:material-code-braces: PipelineExperimentConfigTypeDef](./type_defs.md#pipelineexperimentconfigtypedef) 
-3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-4. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-5. See [:material-code-braces: ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef) 
-6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSubscribedWorkteamResponseTypeDef
 
 ```python title="Usage Example"
@@ -15132,162 +14623,6 @@ class TrainingJobSummaryTypeDef(TypedDict):
 
 1. See [:material-code-brackets: TrainingJobStatusType](./literals.md#trainingjobstatustype) 
 2. See [:material-code-braces: WarmPoolStatusTypeDef](./type_defs.md#warmpoolstatustypedef) 
-## DescribeTrialComponentResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import DescribeTrialComponentResponseTypeDef
-
-def get_value() -> DescribeTrialComponentResponseTypeDef:
-    return {
-        "TrialComponentName": ...,
-        "TrialComponentArn": ...,
-        "DisplayName": ...,
-        "Source": ...,
-        "Status": ...,
-        "StartTime": ...,
-        "EndTime": ...,
-        "CreationTime": ...,
-        "CreatedBy": ...,
-        "LastModifiedTime": ...,
-        "LastModifiedBy": ...,
-        "Parameters": ...,
-        "InputArtifacts": ...,
-        "OutputArtifacts": ...,
-        "MetadataProperties": ...,
-        "Metrics": ...,
-        "LineageGroupArn": ...,
-        "Sources": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeTrialComponentResponseTypeDef(TypedDict):
-    TrialComponentName: str,
-    TrialComponentArn: str,
-    DisplayName: str,
-    Source: TrialComponentSourceTypeDef,  # (1)
-    Status: TrialComponentStatusTypeDef,  # (2)
-    StartTime: datetime,
-    EndTime: datetime,
-    CreationTime: datetime,
-    CreatedBy: UserContextTypeDef,  # (3)
-    LastModifiedTime: datetime,
-    LastModifiedBy: UserContextTypeDef,  # (3)
-    Parameters: Dict[str, TrialComponentParameterValueTypeDef],  # (5)
-    InputArtifacts: Dict[str, TrialComponentArtifactTypeDef],  # (6)
-    OutputArtifacts: Dict[str, TrialComponentArtifactTypeDef],  # (6)
-    MetadataProperties: MetadataPropertiesTypeDef,  # (8)
-    Metrics: List[TrialComponentMetricSummaryTypeDef],  # (9)
-    LineageGroupArn: str,
-    Sources: List[TrialComponentSourceTypeDef],  # (10)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (11)
-```
-
-1. See [:material-code-braces: TrialComponentSourceTypeDef](./type_defs.md#trialcomponentsourcetypedef) 
-2. See [:material-code-braces: TrialComponentStatusTypeDef](./type_defs.md#trialcomponentstatustypedef) 
-3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-4. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-5. See [:material-code-braces: TrialComponentParameterValueTypeDef](./type_defs.md#trialcomponentparametervaluetypedef) 
-6. See [:material-code-braces: TrialComponentArtifactTypeDef](./type_defs.md#trialcomponentartifacttypedef) 
-7. See [:material-code-braces: TrialComponentArtifactTypeDef](./type_defs.md#trialcomponentartifacttypedef) 
-8. See [:material-code-braces: MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef) 
-9. See [:material-code-braces: TrialComponentMetricSummaryTypeDef](./type_defs.md#trialcomponentmetricsummarytypedef) 
-10. See [:material-code-braces: TrialComponentSourceTypeDef](./type_defs.md#trialcomponentsourcetypedef) 
-11. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## TrialComponentSimpleSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import TrialComponentSimpleSummaryTypeDef
-
-def get_value() -> TrialComponentSimpleSummaryTypeDef:
-    return {
-        "TrialComponentName": ...,
-    }
-```
-
-```python title="Definition"
-class TrialComponentSimpleSummaryTypeDef(TypedDict):
-    TrialComponentName: NotRequired[str],
-    TrialComponentArn: NotRequired[str],
-    TrialComponentSource: NotRequired[TrialComponentSourceTypeDef],  # (1)
-    CreationTime: NotRequired[datetime],
-    CreatedBy: NotRequired[UserContextTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: TrialComponentSourceTypeDef](./type_defs.md#trialcomponentsourcetypedef) 
-2. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-## TrialComponentSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import TrialComponentSummaryTypeDef
-
-def get_value() -> TrialComponentSummaryTypeDef:
-    return {
-        "TrialComponentName": ...,
-    }
-```
-
-```python title="Definition"
-class TrialComponentSummaryTypeDef(TypedDict):
-    TrialComponentName: NotRequired[str],
-    TrialComponentArn: NotRequired[str],
-    DisplayName: NotRequired[str],
-    TrialComponentSource: NotRequired[TrialComponentSourceTypeDef],  # (1)
-    Status: NotRequired[TrialComponentStatusTypeDef],  # (2)
-    StartTime: NotRequired[datetime],
-    EndTime: NotRequired[datetime],
-    CreationTime: NotRequired[datetime],
-    CreatedBy: NotRequired[UserContextTypeDef],  # (3)
-    LastModifiedTime: NotRequired[datetime],
-    LastModifiedBy: NotRequired[UserContextTypeDef],  # (3)
-```
-
-1. See [:material-code-braces: TrialComponentSourceTypeDef](./type_defs.md#trialcomponentsourcetypedef) 
-2. See [:material-code-braces: TrialComponentStatusTypeDef](./type_defs.md#trialcomponentstatustypedef) 
-3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-4. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-## DescribeTrialResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import DescribeTrialResponseTypeDef
-
-def get_value() -> DescribeTrialResponseTypeDef:
-    return {
-        "TrialName": ...,
-        "TrialArn": ...,
-        "DisplayName": ...,
-        "ExperimentName": ...,
-        "Source": ...,
-        "CreationTime": ...,
-        "CreatedBy": ...,
-        "LastModifiedTime": ...,
-        "LastModifiedBy": ...,
-        "MetadataProperties": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeTrialResponseTypeDef(TypedDict):
-    TrialName: str,
-    TrialArn: str,
-    DisplayName: str,
-    ExperimentName: str,
-    Source: TrialSourceTypeDef,  # (1)
-    CreationTime: datetime,
-    CreatedBy: UserContextTypeDef,  # (2)
-    LastModifiedTime: datetime,
-    LastModifiedBy: UserContextTypeDef,  # (2)
-    MetadataProperties: MetadataPropertiesTypeDef,  # (4)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
-```
-
-1. See [:material-code-braces: TrialSourceTypeDef](./type_defs.md#trialsourcetypedef) 
-2. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-4. See [:material-code-braces: MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TrialSummaryTypeDef
 
 ```python title="Usage Example"
@@ -15980,6 +15315,26 @@ class HyperParameterTuningJobWarmStartConfigTypeDef(TypedDict):
 
 1. See [:material-code-braces: ParentHyperParameterTuningJobTypeDef](./type_defs.md#parenthyperparametertuningjobtypedef) 
 2. See [:material-code-brackets: HyperParameterTuningJobWarmStartTypeType](./literals.md#hyperparametertuningjobwarmstarttypetype) 
+## UserContextTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import UserContextTypeDef
+
+def get_value() -> UserContextTypeDef:
+    return {
+        "UserProfileArn": ...,
+    }
+```
+
+```python title="Definition"
+class UserContextTypeDef(TypedDict):
+    UserProfileArn: NotRequired[str],
+    UserProfileName: NotRequired[str],
+    DomainId: NotRequired[str],
+    IamIdentity: NotRequired[IamIdentityTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: IamIdentityTypeDef](./type_defs.md#iamidentitytypedef) 
 ## ImageConfigTypeDef
 
 ```python title="Usage Example"
@@ -18264,40 +17619,6 @@ class ListPipelineParametersForExecutionResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PipelineExecutionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import PipelineExecutionTypeDef
-
-def get_value() -> PipelineExecutionTypeDef:
-    return {
-        "PipelineArn": ...,
-    }
-```
-
-```python title="Definition"
-class PipelineExecutionTypeDef(TypedDict):
-    PipelineArn: NotRequired[str],
-    PipelineExecutionArn: NotRequired[str],
-    PipelineExecutionDisplayName: NotRequired[str],
-    PipelineExecutionStatus: NotRequired[PipelineExecutionStatusType],  # (1)
-    PipelineExecutionDescription: NotRequired[str],
-    PipelineExperimentConfig: NotRequired[PipelineExperimentConfigTypeDef],  # (2)
-    FailureReason: NotRequired[str],
-    CreationTime: NotRequired[datetime],
-    LastModifiedTime: NotRequired[datetime],
-    CreatedBy: NotRequired[UserContextTypeDef],  # (3)
-    LastModifiedBy: NotRequired[UserContextTypeDef],  # (3)
-    ParallelismConfiguration: NotRequired[ParallelismConfigurationTypeDef],  # (5)
-    PipelineParameters: NotRequired[List[ParameterTypeDef]],  # (6)
-```
-
-1. See [:material-code-brackets: PipelineExecutionStatusType](./literals.md#pipelineexecutionstatustype) 
-2. See [:material-code-braces: PipelineExperimentConfigTypeDef](./type_defs.md#pipelineexperimentconfigtypedef) 
-3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-4. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-5. See [:material-code-braces: ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef) 
-6. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
 ## StartPipelineExecutionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -19296,71 +18617,6 @@ class DeleteArtifactRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ArtifactSourceTypeDef](./type_defs.md#artifactsourcetypedef) 
-## DescribeArtifactResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import DescribeArtifactResponseTypeDef
-
-def get_value() -> DescribeArtifactResponseTypeDef:
-    return {
-        "ArtifactName": ...,
-        "ArtifactArn": ...,
-        "Source": ...,
-        "ArtifactType": ...,
-        "Properties": ...,
-        "CreationTime": ...,
-        "CreatedBy": ...,
-        "LastModifiedTime": ...,
-        "LastModifiedBy": ...,
-        "MetadataProperties": ...,
-        "LineageGroupArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeArtifactResponseTypeDef(TypedDict):
-    ArtifactName: str,
-    ArtifactArn: str,
-    Source: ArtifactSourceTypeDef,  # (1)
-    ArtifactType: str,
-    Properties: Dict[str, str],
-    CreationTime: datetime,
-    CreatedBy: UserContextTypeDef,  # (2)
-    LastModifiedTime: datetime,
-    LastModifiedBy: UserContextTypeDef,  # (2)
-    MetadataProperties: MetadataPropertiesTypeDef,  # (4)
-    LineageGroupArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
-```
-
-1. See [:material-code-braces: ArtifactSourceTypeDef](./type_defs.md#artifactsourcetypedef) 
-2. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-4. See [:material-code-braces: MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListAssociationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import ListAssociationsResponseTypeDef
-
-def get_value() -> ListAssociationsResponseTypeDef:
-    return {
-        "AssociationSummaries": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAssociationsResponseTypeDef(TypedDict):
-    AssociationSummaries: List[AssociationSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AssociationSummaryTypeDef](./type_defs.md#associationsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AsyncInferenceConfigTypeDef
 
 ```python title="Usage Example"
@@ -20009,61 +19265,6 @@ class ListTrainingJobsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: TrainingJobSummaryTypeDef](./type_defs.md#trainingjobsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## TrialTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import TrialTypeDef
-
-def get_value() -> TrialTypeDef:
-    return {
-        "TrialName": ...,
-    }
-```
-
-```python title="Definition"
-class TrialTypeDef(TypedDict):
-    TrialName: NotRequired[str],
-    TrialArn: NotRequired[str],
-    DisplayName: NotRequired[str],
-    ExperimentName: NotRequired[str],
-    Source: NotRequired[TrialSourceTypeDef],  # (1)
-    CreationTime: NotRequired[datetime],
-    CreatedBy: NotRequired[UserContextTypeDef],  # (2)
-    LastModifiedTime: NotRequired[datetime],
-    LastModifiedBy: NotRequired[UserContextTypeDef],  # (2)
-    MetadataProperties: NotRequired[MetadataPropertiesTypeDef],  # (4)
-    Tags: NotRequired[List[TagTypeDef]],  # (5)
-    TrialComponentSummaries: NotRequired[List[TrialComponentSimpleSummaryTypeDef]],  # (6)
-```
-
-1. See [:material-code-braces: TrialSourceTypeDef](./type_defs.md#trialsourcetypedef) 
-2. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-4. See [:material-code-braces: MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef) 
-5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-6. See [:material-code-braces: TrialComponentSimpleSummaryTypeDef](./type_defs.md#trialcomponentsimplesummarytypedef) 
-## ListTrialComponentsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import ListTrialComponentsResponseTypeDef
-
-def get_value() -> ListTrialComponentsResponseTypeDef:
-    return {
-        "TrialComponentSummaries": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTrialComponentsResponseTypeDef(TypedDict):
-    TrialComponentSummaries: List[TrialComponentSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TrialComponentSummaryTypeDef](./type_defs.md#trialcomponentsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTrialsResponseTypeDef
 
 ```python title="Usage Example"
@@ -20246,6 +19447,748 @@ class ListHyperParameterTuningJobsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: HyperParameterTuningJobSummaryTypeDef](./type_defs.md#hyperparametertuningjobsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AssociationSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import AssociationSummaryTypeDef
+
+def get_value() -> AssociationSummaryTypeDef:
+    return {
+        "SourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class AssociationSummaryTypeDef(TypedDict):
+    SourceArn: NotRequired[str],
+    DestinationArn: NotRequired[str],
+    SourceType: NotRequired[str],
+    DestinationType: NotRequired[str],
+    AssociationType: NotRequired[AssociationEdgeTypeType],  # (1)
+    SourceName: NotRequired[str],
+    DestinationName: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    CreatedBy: NotRequired[UserContextTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: AssociationEdgeTypeType](./literals.md#associationedgetypetype) 
+2. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+## DescribeActionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeActionResponseTypeDef
+
+def get_value() -> DescribeActionResponseTypeDef:
+    return {
+        "ActionName": ...,
+        "ActionArn": ...,
+        "Source": ...,
+        "ActionType": ...,
+        "Description": ...,
+        "Status": ...,
+        "Properties": ...,
+        "CreationTime": ...,
+        "CreatedBy": ...,
+        "LastModifiedTime": ...,
+        "LastModifiedBy": ...,
+        "MetadataProperties": ...,
+        "LineageGroupArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeActionResponseTypeDef(TypedDict):
+    ActionName: str,
+    ActionArn: str,
+    Source: ActionSourceTypeDef,  # (1)
+    ActionType: str,
+    Description: str,
+    Status: ActionStatusType,  # (2)
+    Properties: Dict[str, str],
+    CreationTime: datetime,
+    CreatedBy: UserContextTypeDef,  # (3)
+    LastModifiedTime: datetime,
+    LastModifiedBy: UserContextTypeDef,  # (3)
+    MetadataProperties: MetadataPropertiesTypeDef,  # (5)
+    LineageGroupArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
+
+1. See [:material-code-braces: ActionSourceTypeDef](./type_defs.md#actionsourcetypedef) 
+2. See [:material-code-brackets: ActionStatusType](./literals.md#actionstatustype) 
+3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+4. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+5. See [:material-code-braces: MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeArtifactResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeArtifactResponseTypeDef
+
+def get_value() -> DescribeArtifactResponseTypeDef:
+    return {
+        "ArtifactName": ...,
+        "ArtifactArn": ...,
+        "Source": ...,
+        "ArtifactType": ...,
+        "Properties": ...,
+        "CreationTime": ...,
+        "CreatedBy": ...,
+        "LastModifiedTime": ...,
+        "LastModifiedBy": ...,
+        "MetadataProperties": ...,
+        "LineageGroupArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeArtifactResponseTypeDef(TypedDict):
+    ArtifactName: str,
+    ArtifactArn: str,
+    Source: ArtifactSourceTypeDef,  # (1)
+    ArtifactType: str,
+    Properties: Dict[str, str],
+    CreationTime: datetime,
+    CreatedBy: UserContextTypeDef,  # (2)
+    LastModifiedTime: datetime,
+    LastModifiedBy: UserContextTypeDef,  # (2)
+    MetadataProperties: MetadataPropertiesTypeDef,  # (4)
+    LineageGroupArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-braces: ArtifactSourceTypeDef](./type_defs.md#artifactsourcetypedef) 
+2. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+4. See [:material-code-braces: MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeContextResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeContextResponseTypeDef
+
+def get_value() -> DescribeContextResponseTypeDef:
+    return {
+        "ContextName": ...,
+        "ContextArn": ...,
+        "Source": ...,
+        "ContextType": ...,
+        "Description": ...,
+        "Properties": ...,
+        "CreationTime": ...,
+        "CreatedBy": ...,
+        "LastModifiedTime": ...,
+        "LastModifiedBy": ...,
+        "LineageGroupArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeContextResponseTypeDef(TypedDict):
+    ContextName: str,
+    ContextArn: str,
+    Source: ContextSourceTypeDef,  # (1)
+    ContextType: str,
+    Description: str,
+    Properties: Dict[str, str],
+    CreationTime: datetime,
+    CreatedBy: UserContextTypeDef,  # (2)
+    LastModifiedTime: datetime,
+    LastModifiedBy: UserContextTypeDef,  # (2)
+    LineageGroupArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: ContextSourceTypeDef](./type_defs.md#contextsourcetypedef) 
+2. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeExperimentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeExperimentResponseTypeDef
+
+def get_value() -> DescribeExperimentResponseTypeDef:
+    return {
+        "ExperimentName": ...,
+        "ExperimentArn": ...,
+        "DisplayName": ...,
+        "Source": ...,
+        "Description": ...,
+        "CreationTime": ...,
+        "CreatedBy": ...,
+        "LastModifiedTime": ...,
+        "LastModifiedBy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeExperimentResponseTypeDef(TypedDict):
+    ExperimentName: str,
+    ExperimentArn: str,
+    DisplayName: str,
+    Source: ExperimentSourceTypeDef,  # (1)
+    Description: str,
+    CreationTime: datetime,
+    CreatedBy: UserContextTypeDef,  # (2)
+    LastModifiedTime: datetime,
+    LastModifiedBy: UserContextTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: ExperimentSourceTypeDef](./type_defs.md#experimentsourcetypedef) 
+2. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeLineageGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeLineageGroupResponseTypeDef
+
+def get_value() -> DescribeLineageGroupResponseTypeDef:
+    return {
+        "LineageGroupName": ...,
+        "LineageGroupArn": ...,
+        "DisplayName": ...,
+        "Description": ...,
+        "CreationTime": ...,
+        "CreatedBy": ...,
+        "LastModifiedTime": ...,
+        "LastModifiedBy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLineageGroupResponseTypeDef(TypedDict):
+    LineageGroupName: str,
+    LineageGroupArn: str,
+    DisplayName: str,
+    Description: str,
+    CreationTime: datetime,
+    CreatedBy: UserContextTypeDef,  # (1)
+    LastModifiedTime: datetime,
+    LastModifiedBy: UserContextTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+2. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeModelCardResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeModelCardResponseTypeDef
+
+def get_value() -> DescribeModelCardResponseTypeDef:
+    return {
+        "ModelCardArn": ...,
+        "ModelCardName": ...,
+        "ModelCardVersion": ...,
+        "Content": ...,
+        "ModelCardStatus": ...,
+        "SecurityConfig": ...,
+        "CreationTime": ...,
+        "CreatedBy": ...,
+        "LastModifiedTime": ...,
+        "LastModifiedBy": ...,
+        "ModelCardProcessingStatus": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeModelCardResponseTypeDef(TypedDict):
+    ModelCardArn: str,
+    ModelCardName: str,
+    ModelCardVersion: int,
+    Content: str,
+    ModelCardStatus: ModelCardStatusType,  # (1)
+    SecurityConfig: ModelCardSecurityConfigTypeDef,  # (2)
+    CreationTime: datetime,
+    CreatedBy: UserContextTypeDef,  # (3)
+    LastModifiedTime: datetime,
+    LastModifiedBy: UserContextTypeDef,  # (3)
+    ModelCardProcessingStatus: ModelCardProcessingStatusType,  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
+
+1. See [:material-code-brackets: ModelCardStatusType](./literals.md#modelcardstatustype) 
+2. See [:material-code-braces: ModelCardSecurityConfigTypeDef](./type_defs.md#modelcardsecurityconfigtypedef) 
+3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+4. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+5. See [:material-code-brackets: ModelCardProcessingStatusType](./literals.md#modelcardprocessingstatustype) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeModelPackageGroupOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeModelPackageGroupOutputTypeDef
+
+def get_value() -> DescribeModelPackageGroupOutputTypeDef:
+    return {
+        "ModelPackageGroupName": ...,
+        "ModelPackageGroupArn": ...,
+        "ModelPackageGroupDescription": ...,
+        "CreationTime": ...,
+        "CreatedBy": ...,
+        "ModelPackageGroupStatus": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeModelPackageGroupOutputTypeDef(TypedDict):
+    ModelPackageGroupName: str,
+    ModelPackageGroupArn: str,
+    ModelPackageGroupDescription: str,
+    CreationTime: datetime,
+    CreatedBy: UserContextTypeDef,  # (1)
+    ModelPackageGroupStatus: ModelPackageGroupStatusType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+2. See [:material-code-brackets: ModelPackageGroupStatusType](./literals.md#modelpackagegroupstatustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribePipelineExecutionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribePipelineExecutionResponseTypeDef
+
+def get_value() -> DescribePipelineExecutionResponseTypeDef:
+    return {
+        "PipelineArn": ...,
+        "PipelineExecutionArn": ...,
+        "PipelineExecutionDisplayName": ...,
+        "PipelineExecutionStatus": ...,
+        "PipelineExecutionDescription": ...,
+        "PipelineExperimentConfig": ...,
+        "FailureReason": ...,
+        "CreationTime": ...,
+        "LastModifiedTime": ...,
+        "CreatedBy": ...,
+        "LastModifiedBy": ...,
+        "ParallelismConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribePipelineExecutionResponseTypeDef(TypedDict):
+    PipelineArn: str,
+    PipelineExecutionArn: str,
+    PipelineExecutionDisplayName: str,
+    PipelineExecutionStatus: PipelineExecutionStatusType,  # (1)
+    PipelineExecutionDescription: str,
+    PipelineExperimentConfig: PipelineExperimentConfigTypeDef,  # (2)
+    FailureReason: str,
+    CreationTime: datetime,
+    LastModifiedTime: datetime,
+    CreatedBy: UserContextTypeDef,  # (3)
+    LastModifiedBy: UserContextTypeDef,  # (3)
+    ParallelismConfiguration: ParallelismConfigurationTypeDef,  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
+
+1. See [:material-code-brackets: PipelineExecutionStatusType](./literals.md#pipelineexecutionstatustype) 
+2. See [:material-code-braces: PipelineExperimentConfigTypeDef](./type_defs.md#pipelineexperimentconfigtypedef) 
+3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+4. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+5. See [:material-code-braces: ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribePipelineResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribePipelineResponseTypeDef
+
+def get_value() -> DescribePipelineResponseTypeDef:
+    return {
+        "PipelineArn": ...,
+        "PipelineName": ...,
+        "PipelineDisplayName": ...,
+        "PipelineDefinition": ...,
+        "PipelineDescription": ...,
+        "RoleArn": ...,
+        "PipelineStatus": ...,
+        "CreationTime": ...,
+        "LastModifiedTime": ...,
+        "LastRunTime": ...,
+        "CreatedBy": ...,
+        "LastModifiedBy": ...,
+        "ParallelismConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribePipelineResponseTypeDef(TypedDict):
+    PipelineArn: str,
+    PipelineName: str,
+    PipelineDisplayName: str,
+    PipelineDefinition: str,
+    PipelineDescription: str,
+    RoleArn: str,
+    PipelineStatus: PipelineStatusType,  # (1)
+    CreationTime: datetime,
+    LastModifiedTime: datetime,
+    LastRunTime: datetime,
+    CreatedBy: UserContextTypeDef,  # (2)
+    LastModifiedBy: UserContextTypeDef,  # (2)
+    ParallelismConfiguration: ParallelismConfigurationTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-brackets: PipelineStatusType](./literals.md#pipelinestatustype) 
+2. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+4. See [:material-code-braces: ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeTrialComponentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeTrialComponentResponseTypeDef
+
+def get_value() -> DescribeTrialComponentResponseTypeDef:
+    return {
+        "TrialComponentName": ...,
+        "TrialComponentArn": ...,
+        "DisplayName": ...,
+        "Source": ...,
+        "Status": ...,
+        "StartTime": ...,
+        "EndTime": ...,
+        "CreationTime": ...,
+        "CreatedBy": ...,
+        "LastModifiedTime": ...,
+        "LastModifiedBy": ...,
+        "Parameters": ...,
+        "InputArtifacts": ...,
+        "OutputArtifacts": ...,
+        "MetadataProperties": ...,
+        "Metrics": ...,
+        "LineageGroupArn": ...,
+        "Sources": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTrialComponentResponseTypeDef(TypedDict):
+    TrialComponentName: str,
+    TrialComponentArn: str,
+    DisplayName: str,
+    Source: TrialComponentSourceTypeDef,  # (1)
+    Status: TrialComponentStatusTypeDef,  # (2)
+    StartTime: datetime,
+    EndTime: datetime,
+    CreationTime: datetime,
+    CreatedBy: UserContextTypeDef,  # (3)
+    LastModifiedTime: datetime,
+    LastModifiedBy: UserContextTypeDef,  # (3)
+    Parameters: Dict[str, TrialComponentParameterValueTypeDef],  # (5)
+    InputArtifacts: Dict[str, TrialComponentArtifactTypeDef],  # (6)
+    OutputArtifacts: Dict[str, TrialComponentArtifactTypeDef],  # (6)
+    MetadataProperties: MetadataPropertiesTypeDef,  # (8)
+    Metrics: List[TrialComponentMetricSummaryTypeDef],  # (9)
+    LineageGroupArn: str,
+    Sources: List[TrialComponentSourceTypeDef],  # (10)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (11)
+```
+
+1. See [:material-code-braces: TrialComponentSourceTypeDef](./type_defs.md#trialcomponentsourcetypedef) 
+2. See [:material-code-braces: TrialComponentStatusTypeDef](./type_defs.md#trialcomponentstatustypedef) 
+3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+4. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+5. See [:material-code-braces: TrialComponentParameterValueTypeDef](./type_defs.md#trialcomponentparametervaluetypedef) 
+6. See [:material-code-braces: TrialComponentArtifactTypeDef](./type_defs.md#trialcomponentartifacttypedef) 
+7. See [:material-code-braces: TrialComponentArtifactTypeDef](./type_defs.md#trialcomponentartifacttypedef) 
+8. See [:material-code-braces: MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef) 
+9. See [:material-code-braces: TrialComponentMetricSummaryTypeDef](./type_defs.md#trialcomponentmetricsummarytypedef) 
+10. See [:material-code-braces: TrialComponentSourceTypeDef](./type_defs.md#trialcomponentsourcetypedef) 
+11. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeTrialResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeTrialResponseTypeDef
+
+def get_value() -> DescribeTrialResponseTypeDef:
+    return {
+        "TrialName": ...,
+        "TrialArn": ...,
+        "DisplayName": ...,
+        "ExperimentName": ...,
+        "Source": ...,
+        "CreationTime": ...,
+        "CreatedBy": ...,
+        "LastModifiedTime": ...,
+        "LastModifiedBy": ...,
+        "MetadataProperties": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTrialResponseTypeDef(TypedDict):
+    TrialName: str,
+    TrialArn: str,
+    DisplayName: str,
+    ExperimentName: str,
+    Source: TrialSourceTypeDef,  # (1)
+    CreationTime: datetime,
+    CreatedBy: UserContextTypeDef,  # (2)
+    LastModifiedTime: datetime,
+    LastModifiedBy: UserContextTypeDef,  # (2)
+    MetadataProperties: MetadataPropertiesTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-braces: TrialSourceTypeDef](./type_defs.md#trialsourcetypedef) 
+2. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+4. See [:material-code-braces: MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ExperimentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ExperimentTypeDef
+
+def get_value() -> ExperimentTypeDef:
+    return {
+        "ExperimentName": ...,
+    }
+```
+
+```python title="Definition"
+class ExperimentTypeDef(TypedDict):
+    ExperimentName: NotRequired[str],
+    ExperimentArn: NotRequired[str],
+    DisplayName: NotRequired[str],
+    Source: NotRequired[ExperimentSourceTypeDef],  # (1)
+    Description: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    CreatedBy: NotRequired[UserContextTypeDef],  # (2)
+    LastModifiedTime: NotRequired[datetime],
+    LastModifiedBy: NotRequired[UserContextTypeDef],  # (2)
+    Tags: NotRequired[List[TagTypeDef]],  # (4)
+```
+
+1. See [:material-code-braces: ExperimentSourceTypeDef](./type_defs.md#experimentsourcetypedef) 
+2. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ModelCardTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ModelCardTypeDef
+
+def get_value() -> ModelCardTypeDef:
+    return {
+        "ModelCardArn": ...,
+    }
+```
+
+```python title="Definition"
+class ModelCardTypeDef(TypedDict):
+    ModelCardArn: NotRequired[str],
+    ModelCardName: NotRequired[str],
+    ModelCardVersion: NotRequired[int],
+    Content: NotRequired[str],
+    ModelCardStatus: NotRequired[ModelCardStatusType],  # (1)
+    SecurityConfig: NotRequired[ModelCardSecurityConfigTypeDef],  # (2)
+    CreationTime: NotRequired[datetime],
+    CreatedBy: NotRequired[UserContextTypeDef],  # (3)
+    LastModifiedTime: NotRequired[datetime],
+    LastModifiedBy: NotRequired[UserContextTypeDef],  # (3)
+    Tags: NotRequired[List[TagTypeDef]],  # (5)
+    ModelId: NotRequired[str],
+    RiskRating: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ModelCardStatusType](./literals.md#modelcardstatustype) 
+2. See [:material-code-braces: ModelCardSecurityConfigTypeDef](./type_defs.md#modelcardsecurityconfigtypedef) 
+3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+4. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ModelDashboardModelCardTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ModelDashboardModelCardTypeDef
+
+def get_value() -> ModelDashboardModelCardTypeDef:
+    return {
+        "ModelCardArn": ...,
+    }
+```
+
+```python title="Definition"
+class ModelDashboardModelCardTypeDef(TypedDict):
+    ModelCardArn: NotRequired[str],
+    ModelCardName: NotRequired[str],
+    ModelCardVersion: NotRequired[int],
+    ModelCardStatus: NotRequired[ModelCardStatusType],  # (1)
+    SecurityConfig: NotRequired[ModelCardSecurityConfigTypeDef],  # (2)
+    CreationTime: NotRequired[datetime],
+    CreatedBy: NotRequired[UserContextTypeDef],  # (3)
+    LastModifiedTime: NotRequired[datetime],
+    LastModifiedBy: NotRequired[UserContextTypeDef],  # (3)
+    Tags: NotRequired[List[TagTypeDef]],  # (5)
+    ModelId: NotRequired[str],
+    RiskRating: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ModelCardStatusType](./literals.md#modelcardstatustype) 
+2. See [:material-code-braces: ModelCardSecurityConfigTypeDef](./type_defs.md#modelcardsecurityconfigtypedef) 
+3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+4. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ModelPackageGroupTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ModelPackageGroupTypeDef
+
+def get_value() -> ModelPackageGroupTypeDef:
+    return {
+        "ModelPackageGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class ModelPackageGroupTypeDef(TypedDict):
+    ModelPackageGroupName: NotRequired[str],
+    ModelPackageGroupArn: NotRequired[str],
+    ModelPackageGroupDescription: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    CreatedBy: NotRequired[UserContextTypeDef],  # (1)
+    ModelPackageGroupStatus: NotRequired[ModelPackageGroupStatusType],  # (2)
+    Tags: NotRequired[List[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+2. See [:material-code-brackets: ModelPackageGroupStatusType](./literals.md#modelpackagegroupstatustype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## PipelineExecutionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import PipelineExecutionTypeDef
+
+def get_value() -> PipelineExecutionTypeDef:
+    return {
+        "PipelineArn": ...,
+    }
+```
+
+```python title="Definition"
+class PipelineExecutionTypeDef(TypedDict):
+    PipelineArn: NotRequired[str],
+    PipelineExecutionArn: NotRequired[str],
+    PipelineExecutionDisplayName: NotRequired[str],
+    PipelineExecutionStatus: NotRequired[PipelineExecutionStatusType],  # (1)
+    PipelineExecutionDescription: NotRequired[str],
+    PipelineExperimentConfig: NotRequired[PipelineExperimentConfigTypeDef],  # (2)
+    FailureReason: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    LastModifiedTime: NotRequired[datetime],
+    CreatedBy: NotRequired[UserContextTypeDef],  # (3)
+    LastModifiedBy: NotRequired[UserContextTypeDef],  # (3)
+    ParallelismConfiguration: NotRequired[ParallelismConfigurationTypeDef],  # (5)
+    PipelineParameters: NotRequired[List[ParameterTypeDef]],  # (6)
+```
+
+1. See [:material-code-brackets: PipelineExecutionStatusType](./literals.md#pipelineexecutionstatustype) 
+2. See [:material-code-braces: PipelineExperimentConfigTypeDef](./type_defs.md#pipelineexperimentconfigtypedef) 
+3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+4. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+5. See [:material-code-braces: ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef) 
+6. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+## PipelineTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import PipelineTypeDef
+
+def get_value() -> PipelineTypeDef:
+    return {
+        "PipelineArn": ...,
+    }
+```
+
+```python title="Definition"
+class PipelineTypeDef(TypedDict):
+    PipelineArn: NotRequired[str],
+    PipelineName: NotRequired[str],
+    PipelineDisplayName: NotRequired[str],
+    PipelineDescription: NotRequired[str],
+    RoleArn: NotRequired[str],
+    PipelineStatus: NotRequired[PipelineStatusType],  # (1)
+    CreationTime: NotRequired[datetime],
+    LastModifiedTime: NotRequired[datetime],
+    LastRunTime: NotRequired[datetime],
+    CreatedBy: NotRequired[UserContextTypeDef],  # (2)
+    LastModifiedBy: NotRequired[UserContextTypeDef],  # (2)
+    ParallelismConfiguration: NotRequired[ParallelismConfigurationTypeDef],  # (4)
+    Tags: NotRequired[List[TagTypeDef]],  # (5)
+```
+
+1. See [:material-code-brackets: PipelineStatusType](./literals.md#pipelinestatustype) 
+2. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+4. See [:material-code-braces: ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## TrialComponentSimpleSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import TrialComponentSimpleSummaryTypeDef
+
+def get_value() -> TrialComponentSimpleSummaryTypeDef:
+    return {
+        "TrialComponentName": ...,
+    }
+```
+
+```python title="Definition"
+class TrialComponentSimpleSummaryTypeDef(TypedDict):
+    TrialComponentName: NotRequired[str],
+    TrialComponentArn: NotRequired[str],
+    TrialComponentSource: NotRequired[TrialComponentSourceTypeDef],  # (1)
+    CreationTime: NotRequired[datetime],
+    CreatedBy: NotRequired[UserContextTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TrialComponentSourceTypeDef](./type_defs.md#trialcomponentsourcetypedef) 
+2. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+## TrialComponentSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import TrialComponentSummaryTypeDef
+
+def get_value() -> TrialComponentSummaryTypeDef:
+    return {
+        "TrialComponentName": ...,
+    }
+```
+
+```python title="Definition"
+class TrialComponentSummaryTypeDef(TypedDict):
+    TrialComponentName: NotRequired[str],
+    TrialComponentArn: NotRequired[str],
+    DisplayName: NotRequired[str],
+    TrialComponentSource: NotRequired[TrialComponentSourceTypeDef],  # (1)
+    Status: NotRequired[TrialComponentStatusTypeDef],  # (2)
+    StartTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+    CreationTime: NotRequired[datetime],
+    CreatedBy: NotRequired[UserContextTypeDef],  # (3)
+    LastModifiedTime: NotRequired[datetime],
+    LastModifiedBy: NotRequired[UserContextTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: TrialComponentSourceTypeDef](./type_defs.md#trialcomponentsourcetypedef) 
+2. See [:material-code-braces: TrialComponentStatusTypeDef](./type_defs.md#trialcomponentstatustypedef) 
+3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+4. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
 ## ContainerDefinitionTypeDef
 
 ```python title="Usage Example"
@@ -21955,6 +21898,83 @@ class InferenceRecommendationsJobStepTypeDef(TypedDict):
 1. See [:material-code-brackets: RecommendationStepTypeType](./literals.md#recommendationsteptypetype) 
 2. See [:material-code-brackets: RecommendationJobStatusType](./literals.md#recommendationjobstatustype) 
 3. See [:material-code-braces: RecommendationJobInferenceBenchmarkTypeDef](./type_defs.md#recommendationjobinferencebenchmarktypedef) 
+## ListAssociationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListAssociationsResponseTypeDef
+
+def get_value() -> ListAssociationsResponseTypeDef:
+    return {
+        "AssociationSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssociationsResponseTypeDef(TypedDict):
+    AssociationSummaries: List[AssociationSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AssociationSummaryTypeDef](./type_defs.md#associationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TrialTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import TrialTypeDef
+
+def get_value() -> TrialTypeDef:
+    return {
+        "TrialName": ...,
+    }
+```
+
+```python title="Definition"
+class TrialTypeDef(TypedDict):
+    TrialName: NotRequired[str],
+    TrialArn: NotRequired[str],
+    DisplayName: NotRequired[str],
+    ExperimentName: NotRequired[str],
+    Source: NotRequired[TrialSourceTypeDef],  # (1)
+    CreationTime: NotRequired[datetime],
+    CreatedBy: NotRequired[UserContextTypeDef],  # (2)
+    LastModifiedTime: NotRequired[datetime],
+    LastModifiedBy: NotRequired[UserContextTypeDef],  # (2)
+    MetadataProperties: NotRequired[MetadataPropertiesTypeDef],  # (4)
+    Tags: NotRequired[List[TagTypeDef]],  # (5)
+    TrialComponentSummaries: NotRequired[List[TrialComponentSimpleSummaryTypeDef]],  # (6)
+```
+
+1. See [:material-code-braces: TrialSourceTypeDef](./type_defs.md#trialsourcetypedef) 
+2. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+4. See [:material-code-braces: MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: TrialComponentSimpleSummaryTypeDef](./type_defs.md#trialcomponentsimplesummarytypedef) 
+## ListTrialComponentsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListTrialComponentsResponseTypeDef
+
+def get_value() -> ListTrialComponentsResponseTypeDef:
+    return {
+        "TrialComponentSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTrialComponentsResponseTypeDef(TypedDict):
+    TrialComponentSummaries: List[TrialComponentSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TrialComponentSummaryTypeDef](./type_defs.md#trialcomponentsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateModelInputRequestTypeDef
 
 ```python title="Usage Example"

@@ -4904,6 +4904,7 @@ class CreateTableInputRequestTypeDef(TypedDict):
     SSESpecification: NotRequired[SSESpecificationTypeDef],  # (8)
     Tags: NotRequired[Sequence[TagTypeDef]],  # (9)
     TableClass: NotRequired[TableClassType],  # (10)
+    DeletionProtectionEnabled: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef) 
@@ -5240,6 +5241,7 @@ class CreateTableInputServiceResourceCreateTableTypeDef(TypedDict):
     SSESpecification: NotRequired[SSESpecificationServiceResourceTypeDef],  # (8)
     Tags: NotRequired[Sequence[TagServiceResourceTypeDef]],  # (9)
     TableClass: NotRequired[TableClassType],  # (10)
+    DeletionProtectionEnabled: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: AttributeDefinitionServiceResourceTypeDef](./type_defs.md#attributedefinitionserviceresourcetypedef) 
@@ -5653,6 +5655,7 @@ class TableDescriptionTableTypeDef(TypedDict):
     SSEDescription: NotRequired[SSEDescriptionTableTypeDef],  # (11)
     ArchivalSummary: NotRequired[ArchivalSummaryTableTypeDef],  # (12)
     TableClassSummary: NotRequired[TableClassSummaryTableTypeDef],  # (13)
+    DeletionProtectionEnabled: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: AttributeDefinitionTableTypeDef](./type_defs.md#attributedefinitiontabletypedef) 
@@ -5746,6 +5749,7 @@ class TableDescriptionTypeDef(TypedDict):
     SSEDescription: NotRequired[SSEDescriptionTypeDef],  # (11)
     ArchivalSummary: NotRequired[ArchivalSummaryTypeDef],  # (12)
     TableClassSummary: NotRequired[TableClassSummaryTypeDef],  # (13)
+    DeletionProtectionEnabled: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef) 
@@ -6000,6 +6004,7 @@ class UpdateTableInputTableUpdateTypeDef(TypedDict):
     SSESpecification: NotRequired[SSESpecificationTableTypeDef],  # (6)
     ReplicaUpdates: NotRequired[Sequence[ReplicationGroupUpdateTableTypeDef]],  # (7)
     TableClass: NotRequired[TableClassType],  # (8)
+    DeletionProtectionEnabled: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: AttributeDefinitionTableTypeDef](./type_defs.md#attributedefinitiontabletypedef) 
@@ -6212,6 +6217,7 @@ class UpdateTableInputRequestTypeDef(TypedDict):
     SSESpecification: NotRequired[SSESpecificationTypeDef],  # (6)
     ReplicaUpdates: NotRequired[Sequence[ReplicationGroupUpdateTypeDef]],  # (7)
     TableClass: NotRequired[TableClassType],  # (8)
+    DeletionProtectionEnabled: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef) 

@@ -579,6 +579,41 @@ def generate_presigned_url(
 ```
 
 
+### get\_data\_cells\_filter
+
+Returns a data cells filter.
+
+Type annotations and code completion for `#!python boto3.client("lakeformation").get_data_cells_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_data_cells_filter)
+
+```python title="Method definition"
+def get_data_cells_filter(
+    self,
+    *,
+    TableCatalogId: str,
+    DatabaseName: str,
+    TableName: str,
+    Name: str,
+) -> GetDataCellsFilterResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetDataCellsFilterResponseTypeDef](./type_defs.md#getdatacellsfilterresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetDataCellsFilterRequestRequestTypeDef = {  # (1)
+    "TableCatalogId": ...,
+    "DatabaseName": ...,
+    "TableName": ...,
+    "Name": ...,
+}
+
+parent.get_data_cells_filter(**kwargs)
+```
+
+1. See [:material-code-braces: GetDataCellsFilterRequestRequestTypeDef](./type_defs.md#getdatacellsfilterrequestrequesttypedef) 
+
 ### get\_data\_lake\_settings
 
 Retrieves the list of the data lake administrators of a Lake Formation-managed
@@ -1448,6 +1483,35 @@ parent.start_transaction(**kwargs)
 ```
 
 1. See [:material-code-braces: StartTransactionRequestRequestTypeDef](./type_defs.md#starttransactionrequestrequesttypedef) 
+
+### update\_data\_cells\_filter
+
+Updates a data cell filter.
+
+Type annotations and code completion for `#!python boto3.client("lakeformation").update_data_cells_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.update_data_cells_filter)
+
+```python title="Method definition"
+def update_data_cells_filter(
+    self,
+    *,
+    TableData: DataCellsFilterTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: DataCellsFilterTypeDef](./type_defs.md#datacellsfiltertypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateDataCellsFilterRequestRequestTypeDef = {  # (1)
+    "TableData": ...,
+}
+
+parent.update_data_cells_filter(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateDataCellsFilterRequestRequestTypeDef](./type_defs.md#updatedatacellsfilterrequestrequesttypedef) 
 
 ### update\_lf\_tag
 
