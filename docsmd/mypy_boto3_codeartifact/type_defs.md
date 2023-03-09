@@ -940,6 +940,40 @@ class PackageOriginRestrictionsTypeDef(TypedDict):
 
 1. See [:material-code-brackets: AllowPublishType](./literals.md#allowpublishtype) 
 2. See [:material-code-brackets: AllowUpstreamType](./literals.md#allowupstreamtype) 
+## PublishPackageVersionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeartifact.type_defs import PublishPackageVersionRequestRequestTypeDef
+
+def get_value() -> PublishPackageVersionRequestRequestTypeDef:
+    return {
+        "domain": ...,
+        "repository": ...,
+        "format": ...,
+        "package": ...,
+        "packageVersion": ...,
+        "assetContent": ...,
+        "assetName": ...,
+        "assetSHA256": ...,
+    }
+```
+
+```python title="Definition"
+class PublishPackageVersionRequestRequestTypeDef(TypedDict):
+    domain: str,
+    repository: str,
+    format: PackageFormatType,  # (1)
+    package: str,
+    packageVersion: str,
+    assetContent: Union[str, bytes, IO[Any], StreamingBody],
+    assetName: str,
+    assetSHA256: str,
+    domainOwner: NotRequired[str],
+    namespace: NotRequired[str],
+    unfinished: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
 ## PutDomainPermissionsPolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1197,6 +1231,40 @@ class ListPackageVersionAssetsResultTypeDef(TypedDict):
 1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
 2. See [:material-code-braces: AssetSummaryTypeDef](./type_defs.md#assetsummarytypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PublishPackageVersionResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeartifact.type_defs import PublishPackageVersionResultTypeDef
+
+def get_value() -> PublishPackageVersionResultTypeDef:
+    return {
+        "format": ...,
+        "namespace": ...,
+        "package": ...,
+        "version": ...,
+        "versionRevision": ...,
+        "status": ...,
+        "asset": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PublishPackageVersionResultTypeDef(TypedDict):
+    format: PackageFormatType,  # (1)
+    namespace: str,
+    package: str,
+    version: str,
+    versionRevision: str,
+    status: PackageVersionStatusType,  # (2)
+    asset: AssetSummaryTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-brackets: PackageVersionStatusType](./literals.md#packageversionstatustype) 
+3. See [:material-code-braces: AssetSummaryTypeDef](./type_defs.md#assetsummarytypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CopyPackageVersionsResultTypeDef
 
 ```python title="Usage Example"

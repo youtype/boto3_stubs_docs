@@ -18191,6 +18191,7 @@ class ProductionVariantTypeDef(TypedDict):
     VolumeSizeInGB: NotRequired[int],
     ModelDataDownloadTimeoutInSeconds: NotRequired[int],
     ContainerStartupHealthCheckTimeoutInSeconds: NotRequired[int],
+    EnableSSMAccess: NotRequired[bool],
 ```
 
 1. See [:material-code-brackets: ProductionVariantInstanceTypeType](./literals.md#productionvariantinstancetypetype) 

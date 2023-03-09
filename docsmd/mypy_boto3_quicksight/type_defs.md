@@ -5207,20 +5207,20 @@ class RegisterUserRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
 2. See [:material-code-brackets: UserRoleType](./literals.md#userroletype) 
-## RegisteredUserDashboardEmbeddingConfigurationTypeDef
+## StatePersistenceConfigurationsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import RegisteredUserDashboardEmbeddingConfigurationTypeDef
+from mypy_boto3_quicksight.type_defs import StatePersistenceConfigurationsTypeDef
 
-def get_value() -> RegisteredUserDashboardEmbeddingConfigurationTypeDef:
+def get_value() -> StatePersistenceConfigurationsTypeDef:
     return {
-        "InitialDashboardId": ...,
+        "Enabled": ...,
     }
 ```
 
 ```python title="Definition"
-class RegisteredUserDashboardEmbeddingConfigurationTypeDef(TypedDict):
-    InitialDashboardId: str,
+class StatePersistenceConfigurationsTypeDef(TypedDict):
+    Enabled: bool,
 ```
 
 ## RegisteredUserQSearchBarEmbeddingConfigurationTypeDef
@@ -5237,22 +5237,6 @@ def get_value() -> RegisteredUserQSearchBarEmbeddingConfigurationTypeDef:
 ```python title="Definition"
 class RegisteredUserQSearchBarEmbeddingConfigurationTypeDef(TypedDict):
     InitialTopicId: NotRequired[str],
-```
-
-## RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef
-
-def get_value() -> RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef:
-    return {
-        "InitialPath": ...,
-    }
-```
-
-```python title="Definition"
-class RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef(TypedDict):
-    InitialPath: NotRequired[str],
 ```
 
 ## RenameColumnOperationTypeDef
@@ -10752,6 +10736,40 @@ class RadarChartSeriesSettingsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: RadarChartAreaStyleSettingsTypeDef](./type_defs.md#radarchartareastylesettingstypedef) 
+## RegisteredUserConsoleFeatureConfigurationsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RegisteredUserConsoleFeatureConfigurationsTypeDef
+
+def get_value() -> RegisteredUserConsoleFeatureConfigurationsTypeDef:
+    return {
+        "StatePersistence": ...,
+    }
+```
+
+```python title="Definition"
+class RegisteredUserConsoleFeatureConfigurationsTypeDef(TypedDict):
+    StatePersistence: NotRequired[StatePersistenceConfigurationsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: StatePersistenceConfigurationsTypeDef](./type_defs.md#statepersistenceconfigurationstypedef) 
+## RegisteredUserDashboardFeatureConfigurationsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RegisteredUserDashboardFeatureConfigurationsTypeDef
+
+def get_value() -> RegisteredUserDashboardFeatureConfigurationsTypeDef:
+    return {
+        "StatePersistence": ...,
+    }
+```
+
+```python title="Definition"
+class RegisteredUserDashboardFeatureConfigurationsTypeDef(TypedDict):
+    StatePersistence: NotRequired[StatePersistenceConfigurationsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: StatePersistenceConfigurationsTypeDef](./type_defs.md#statepersistenceconfigurationstypedef) 
 ## RowLevelPermissionTagConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -11162,29 +11180,6 @@ class AnonymousUserEmbeddingExperienceConfigurationTypeDef(TypedDict):
 1. See [:material-code-braces: AnonymousUserDashboardEmbeddingConfigurationTypeDef](./type_defs.md#anonymoususerdashboardembeddingconfigurationtypedef) 
 2. See [:material-code-braces: AnonymousUserDashboardVisualEmbeddingConfigurationTypeDef](./type_defs.md#anonymoususerdashboardvisualembeddingconfigurationtypedef) 
 3. See [:material-code-braces: AnonymousUserQSearchBarEmbeddingConfigurationTypeDef](./type_defs.md#anonymoususerqsearchbarembeddingconfigurationtypedef) 
-## RegisteredUserEmbeddingExperienceConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import RegisteredUserEmbeddingExperienceConfigurationTypeDef
-
-def get_value() -> RegisteredUserEmbeddingExperienceConfigurationTypeDef:
-    return {
-        "Dashboard": ...,
-    }
-```
-
-```python title="Definition"
-class RegisteredUserEmbeddingExperienceConfigurationTypeDef(TypedDict):
-    Dashboard: NotRequired[RegisteredUserDashboardEmbeddingConfigurationTypeDef],  # (1)
-    QuickSightConsole: NotRequired[RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef],  # (2)
-    QSearchBar: NotRequired[RegisteredUserQSearchBarEmbeddingConfigurationTypeDef],  # (3)
-    DashboardVisual: NotRequired[RegisteredUserDashboardVisualEmbeddingConfigurationTypeDef],  # (4)
-```
-
-1. See [:material-code-braces: RegisteredUserDashboardEmbeddingConfigurationTypeDef](./type_defs.md#registereduserdashboardembeddingconfigurationtypedef) 
-2. See [:material-code-braces: RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef](./type_defs.md#registereduserquicksightconsoleembeddingconfigurationtypedef) 
-3. See [:material-code-braces: RegisteredUserQSearchBarEmbeddingConfigurationTypeDef](./type_defs.md#registereduserqsearchbarembeddingconfigurationtypedef) 
-4. See [:material-code-braces: RegisteredUserDashboardVisualEmbeddingConfigurationTypeDef](./type_defs.md#registereduserdashboardvisualembeddingconfigurationtypedef) 
 ## NumericAxisOptionsTypeDef
 
 ```python title="Usage Example"
@@ -12173,6 +12168,42 @@ class ScrollBarOptionsTypeDef(TypedDict):
 
 1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
 2. See [:material-code-braces: VisibleRangeOptionsTypeDef](./type_defs.md#visiblerangeoptionstypedef) 
+## RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef
+
+def get_value() -> RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef:
+    return {
+        "InitialPath": ...,
+    }
+```
+
+```python title="Definition"
+class RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef(TypedDict):
+    InitialPath: NotRequired[str],
+    FeatureConfigurations: NotRequired[RegisteredUserConsoleFeatureConfigurationsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: RegisteredUserConsoleFeatureConfigurationsTypeDef](./type_defs.md#registereduserconsolefeatureconfigurationstypedef) 
+## RegisteredUserDashboardEmbeddingConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RegisteredUserDashboardEmbeddingConfigurationTypeDef
+
+def get_value() -> RegisteredUserDashboardEmbeddingConfigurationTypeDef:
+    return {
+        "InitialDashboardId": ...,
+    }
+```
+
+```python title="Definition"
+class RegisteredUserDashboardEmbeddingConfigurationTypeDef(TypedDict):
+    InitialDashboardId: str,
+    FeatureConfigurations: NotRequired[RegisteredUserDashboardFeatureConfigurationsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: RegisteredUserDashboardFeatureConfigurationsTypeDef](./type_defs.md#registereduserdashboardfeatureconfigurationstypedef) 
 ## PhysicalTableTypeDef
 
 ```python title="Usage Example"
@@ -12492,29 +12523,6 @@ class GenerateEmbedUrlForAnonymousUserRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: AnonymousUserEmbeddingExperienceConfigurationTypeDef](./type_defs.md#anonymoususerembeddingexperienceconfigurationtypedef) 
 2. See [:material-code-braces: SessionTagTypeDef](./type_defs.md#sessiontagtypedef) 
-## GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef
-
-def get_value() -> GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "UserArn": ...,
-        "ExperienceConfiguration": ...,
-    }
-```
-
-```python title="Definition"
-class GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    UserArn: str,
-    ExperienceConfiguration: RegisteredUserEmbeddingExperienceConfigurationTypeDef,  # (1)
-    SessionLifetimeInMinutes: NotRequired[int],
-    AllowedDomains: NotRequired[Sequence[str]],
-```
-
-1. See [:material-code-braces: RegisteredUserEmbeddingExperienceConfigurationTypeDef](./type_defs.md#registereduserembeddingexperienceconfigurationtypedef) 
 ## AxisDataOptionsTypeDef
 
 ```python title="Usage Example"
@@ -13244,6 +13252,29 @@ class ReferenceLineDynamicDataConfigurationTypeDef(TypedDict):
 1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
 2. See [:material-code-braces: AggregationFunctionTypeDef](./type_defs.md#aggregationfunctiontypedef) 
 3. See [:material-code-braces: NumericalAggregationFunctionTypeDef](./type_defs.md#numericalaggregationfunctiontypedef) 
+## RegisteredUserEmbeddingExperienceConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RegisteredUserEmbeddingExperienceConfigurationTypeDef
+
+def get_value() -> RegisteredUserEmbeddingExperienceConfigurationTypeDef:
+    return {
+        "Dashboard": ...,
+    }
+```
+
+```python title="Definition"
+class RegisteredUserEmbeddingExperienceConfigurationTypeDef(TypedDict):
+    Dashboard: NotRequired[RegisteredUserDashboardEmbeddingConfigurationTypeDef],  # (1)
+    QuickSightConsole: NotRequired[RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef],  # (2)
+    QSearchBar: NotRequired[RegisteredUserQSearchBarEmbeddingConfigurationTypeDef],  # (3)
+    DashboardVisual: NotRequired[RegisteredUserDashboardVisualEmbeddingConfigurationTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: RegisteredUserDashboardEmbeddingConfigurationTypeDef](./type_defs.md#registereduserdashboardembeddingconfigurationtypedef) 
+2. See [:material-code-braces: RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef](./type_defs.md#registereduserquicksightconsoleembeddingconfigurationtypedef) 
+3. See [:material-code-braces: RegisteredUserQSearchBarEmbeddingConfigurationTypeDef](./type_defs.md#registereduserqsearchbarembeddingconfigurationtypedef) 
+4. See [:material-code-braces: RegisteredUserDashboardVisualEmbeddingConfigurationTypeDef](./type_defs.md#registereduserdashboardvisualembeddingconfigurationtypedef) 
 ## DefaultSectionBasedLayoutConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -13840,6 +13871,7 @@ class PivotTableOptionsTypeDef(TypedDict):
     CellStyle: NotRequired[TableCellStyleTypeDef],  # (5)
     RowFieldNamesStyle: NotRequired[TableCellStyleTypeDef],  # (5)
     RowAlternateColorOptions: NotRequired[RowAlternateColorOptionsTypeDef],  # (9)
+    CollapsedRowDimensionsVisibility: NotRequired[VisibilityType],  # (2)
 ```
 
 1. See [:material-code-brackets: PivotTableMetricPlacementType](./literals.md#pivottablemetricplacementtype) 
@@ -13851,6 +13883,7 @@ class PivotTableOptionsTypeDef(TypedDict):
 7. See [:material-code-braces: TableCellStyleTypeDef](./type_defs.md#tablecellstyletypedef) 
 8. See [:material-code-braces: TableCellStyleTypeDef](./type_defs.md#tablecellstyletypedef) 
 9. See [:material-code-braces: RowAlternateColorOptionsTypeDef](./type_defs.md#rowalternatecoloroptionstypedef) 
+10. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
 ## PivotTotalOptionsTypeDef
 
 ```python title="Usage Example"
@@ -14449,6 +14482,29 @@ class ReferenceLineDataConfigurationTypeDef(TypedDict):
 1. See [:material-code-braces: ReferenceLineStaticDataConfigurationTypeDef](./type_defs.md#referencelinestaticdataconfigurationtypedef) 
 2. See [:material-code-braces: ReferenceLineDynamicDataConfigurationTypeDef](./type_defs.md#referencelinedynamicdataconfigurationtypedef) 
 3. See [:material-code-brackets: AxisBindingType](./literals.md#axisbindingtype) 
+## GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef
+
+def get_value() -> GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "UserArn": ...,
+        "ExperienceConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    UserArn: str,
+    ExperienceConfiguration: RegisteredUserEmbeddingExperienceConfigurationTypeDef,  # (1)
+    SessionLifetimeInMinutes: NotRequired[int],
+    AllowedDomains: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-braces: RegisteredUserEmbeddingExperienceConfigurationTypeDef](./type_defs.md#registereduserembeddingexperienceconfigurationtypedef) 
 ## DefaultPaginatedLayoutConfigurationTypeDef
 
 ```python title="Usage Example"

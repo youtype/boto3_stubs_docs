@@ -1948,6 +1948,23 @@ class EventBridgeActionDefinitionTypeDef(TypedDict):
     Name: str,
 ```
 
+## FilterV2TypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import FilterV2TypeDef
+
+def get_value() -> FilterV2TypeDef:
+    return {
+        "FilterKey": ...,
+    }
+```
+
+```python title="Definition"
+class FilterV2TypeDef(TypedDict):
+    FilterKey: NotRequired[str],
+    FilterValues: NotRequired[Sequence[str]],
+```
+
 ## FiltersTypeDef
 
 ```python title="Usage Example"
@@ -3194,6 +3211,40 @@ class UserSummaryTypeDef(TypedDict):
     Id: NotRequired[str],
     Arn: NotRequired[str],
     Username: NotRequired[str],
+```
+
+## MetricFilterV2TypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import MetricFilterV2TypeDef
+
+def get_value() -> MetricFilterV2TypeDef:
+    return {
+        "MetricFilterKey": ...,
+    }
+```
+
+```python title="Definition"
+class MetricFilterV2TypeDef(TypedDict):
+    MetricFilterKey: NotRequired[str],
+    MetricFilterValues: NotRequired[Sequence[str]],
+```
+
+## ThresholdV2TypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ThresholdV2TypeDef
+
+def get_value() -> ThresholdV2TypeDef:
+    return {
+        "Comparison": ...,
+    }
+```
+
+```python title="Definition"
+class ThresholdV2TypeDef(TypedDict):
+    Comparison: NotRequired[str],
+    ThresholdValue: NotRequired[float],
 ```
 
 ## MonitorContactRequestRequestTypeDef
@@ -7284,6 +7335,26 @@ class ListUsersResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: UserSummaryTypeDef](./type_defs.md#usersummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## MetricV2TypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import MetricV2TypeDef
+
+def get_value() -> MetricV2TypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class MetricV2TypeDef(TypedDict):
+    Name: NotRequired[str],
+    Threshold: NotRequired[Sequence[ThresholdV2TypeDef]],  # (1)
+    MetricFilters: NotRequired[Sequence[MetricFilterV2TypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: ThresholdV2TypeDef](./type_defs.md#thresholdv2typedef) 
+2. See [:material-code-braces: MetricFilterV2TypeDef](./type_defs.md#metricfilterv2typedef) 
 ## SendNotificationActionDefinitionTypeDef
 
 ```python title="Usage Example"
@@ -8406,6 +8477,53 @@ class TaskTemplateDefaultsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TaskTemplateDefaultFieldValueTypeDef](./type_defs.md#tasktemplatedefaultfieldvaluetypedef) 
+## GetMetricDataV2RequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import GetMetricDataV2RequestRequestTypeDef
+
+def get_value() -> GetMetricDataV2RequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "StartTime": ...,
+        "EndTime": ...,
+        "Filters": ...,
+        "Metrics": ...,
+    }
+```
+
+```python title="Definition"
+class GetMetricDataV2RequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    Filters: Sequence[FilterV2TypeDef],  # (1)
+    Metrics: Sequence[MetricV2TypeDef],  # (2)
+    Groupings: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+1. See [:material-code-braces: FilterV2TypeDef](./type_defs.md#filterv2typedef) 
+2. See [:material-code-braces: MetricV2TypeDef](./type_defs.md#metricv2typedef) 
+## MetricDataV2TypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import MetricDataV2TypeDef
+
+def get_value() -> MetricDataV2TypeDef:
+    return {
+        "Metric": ...,
+    }
+```
+
+```python title="Definition"
+class MetricDataV2TypeDef(TypedDict):
+    Metric: NotRequired[MetricV2TypeDef],  # (1)
+    Value: NotRequired[float],
+```
+
+1. See [:material-code-braces: MetricV2TypeDef](./type_defs.md#metricv2typedef) 
 ## ChatParticipantRoleConfigTypeDef
 
 ```python title="Usage Example"
@@ -9083,6 +9201,24 @@ class UpdateTaskTemplateResponseTypeDef(TypedDict):
 3. See [:material-code-braces: TaskTemplateFieldTypeDef](./type_defs.md#tasktemplatefieldtypedef) 
 4. See [:material-code-brackets: TaskTemplateStatusType](./literals.md#tasktemplatestatustype) 
 5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## MetricResultV2TypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import MetricResultV2TypeDef
+
+def get_value() -> MetricResultV2TypeDef:
+    return {
+        "Dimensions": ...,
+    }
+```
+
+```python title="Definition"
+class MetricResultV2TypeDef(TypedDict):
+    Dimensions: NotRequired[Dict[str, str]],
+    Collections: NotRequired[List[MetricDataV2TypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: MetricDataV2TypeDef](./type_defs.md#metricdatav2typedef) 
 ## UpdateParticipantRoleConfigChannelInfoTypeDef
 
 ```python title="Usage Example"
@@ -9237,6 +9373,28 @@ class GetMetricDataResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: HistoricalMetricResultTypeDef](./type_defs.md#historicalmetricresulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetMetricDataV2ResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import GetMetricDataV2ResponseTypeDef
+
+def get_value() -> GetMetricDataV2ResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "MetricResults": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetMetricDataV2ResponseTypeDef(TypedDict):
+    NextToken: str,
+    MetricResults: List[MetricResultV2TypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MetricResultV2TypeDef](./type_defs.md#metricresultv2typedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateParticipantRoleConfigRequestRequestTypeDef
 

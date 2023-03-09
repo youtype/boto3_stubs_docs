@@ -173,11 +173,12 @@ ListRepositoriesPaginatorName = Literal[
 from mypy_boto3_codeartifact.literals import PackageFormatType
 
 def get_value() -> PackageFormatType:
-    return "maven"
+    return "generic"
 ```
 
 ```python title="Definition"
 PackageFormatType = Literal[
+    "generic",
     "maven",
     "npm",
     "nuget",

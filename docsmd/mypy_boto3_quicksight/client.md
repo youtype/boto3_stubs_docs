@@ -1344,7 +1344,7 @@ parent.delete_theme_alias(**kwargs)
 ### delete\_user
 
 Deletes the Amazon QuickSight user that is associated with the identity of the
-Identity and Access Management (IAM) user or role that's making the call.
+IAM user or role that's making the call.
 
 Type annotations and code completion for `#!python boto3.client("quicksight").delete_user` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_user)

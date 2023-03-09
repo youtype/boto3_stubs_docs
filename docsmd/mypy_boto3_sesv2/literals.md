@@ -428,11 +428,12 @@ RecommendationStatusType = Literal[
 from mypy_boto3_sesv2.literals import RecommendationTypeType
 
 def get_value() -> RecommendationTypeType:
-    return "DKIM"
+    return "BIMI"
 ```
 
 ```python title="Definition"
 RecommendationTypeType = Literal[
+    "BIMI",
     "DKIM",
     "DMARC",
     "SPF",

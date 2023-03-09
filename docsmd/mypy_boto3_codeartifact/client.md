@@ -1205,6 +1205,53 @@ parent.list_tags_for_resource(**kwargs)
 
 1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
+### publish\_package\_version
+
+Creates a new package version containing one or more assets (or files).
+
+Type annotations and code completion for `#!python boto3.client("codeartifact").publish_package_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.publish_package_version)
+
+```python title="Method definition"
+def publish_package_version(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    format: PackageFormatType,  # (1)
+    package: str,
+    packageVersion: str,
+    assetContent: Union[str, bytes, IO[Any], StreamingBody],
+    assetName: str,
+    assetSHA256: str,
+    domainOwner: str = ...,
+    namespace: str = ...,
+    unfinished: bool = ...,
+) -> PublishPackageVersionResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-braces: PublishPackageVersionResultTypeDef](./type_defs.md#publishpackageversionresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PublishPackageVersionRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+    "format": ...,
+    "package": ...,
+    "packageVersion": ...,
+    "assetContent": ...,
+    "assetName": ...,
+    "assetSHA256": ...,
+}
+
+parent.publish_package_version(**kwargs)
+```
+
+1. See [:material-code-braces: PublishPackageVersionRequestRequestTypeDef](./type_defs.md#publishpackageversionrequestrequesttypedef) 
+
 ### put\_domain\_permissions\_policy
 
 Sets a resource policy on a domain that specifies permissions to access it.

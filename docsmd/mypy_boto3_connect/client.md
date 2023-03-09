@@ -2646,6 +2646,48 @@ parent.get_metric_data(**kwargs)
 
 1. See [:material-code-braces: GetMetricDataRequestRequestTypeDef](./type_defs.md#getmetricdatarequestrequesttypedef) 
 
+### get\_metric\_data\_v2
+
+Gets metric data from the specified Amazon Connect instance.
+
+Type annotations and code completion for `#!python boto3.client("connect").get_metric_data_v2` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_metric_data_v2)
+
+```python title="Method definition"
+def get_metric_data_v2(
+    self,
+    *,
+    ResourceArn: str,
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    Filters: Sequence[FilterV2TypeDef],  # (1)
+    Metrics: Sequence[MetricV2TypeDef],  # (2)
+    Groupings: Sequence[str] = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> GetMetricDataV2ResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterV2TypeDef](./type_defs.md#filterv2typedef) 
+2. See [:material-code-braces: MetricV2TypeDef](./type_defs.md#metricv2typedef) 
+3. See [:material-code-braces: GetMetricDataV2ResponseTypeDef](./type_defs.md#getmetricdatav2responsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetMetricDataV2RequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "StartTime": ...,
+    "EndTime": ...,
+    "Filters": ...,
+    "Metrics": ...,
+}
+
+parent.get_metric_data_v2(**kwargs)
+```
+
+1. See [:material-code-braces: GetMetricDataV2RequestRequestTypeDef](./type_defs.md#getmetricdatav2requestrequesttypedef) 
+
 ### get\_task\_template
 
 Gets details about a specific task template in the specified Amazon Connect
