@@ -1,0 +1,145 @@
+name: Update boto3-stubs docs
+concurrency: update
+
+on:
+  schedule:
+    - cron: "0 0/2 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        required: false
+        default: false
+        type: boolean
+        description: Skip version check
+
+jobs:
+  check-version:
+    name: Check boto3 version
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.vars.outputs.version }}
+      current-version: ${{ steps.vars.outputs.current-version }}
+      boto3-version: ${{ steps.vars.outputs.boto3-version }}
+      botocore-version: ${{ steps.vars.outputs.botocore-version }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract versions
+        id: vars
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs')
+            const { setupGlobals, getBoto3Version, getBotocoreVersion } = require('./.github/workflows/helpers.js')
+            setupGlobals({ core, context, fetch })
+
+            core.setOutput('version', '')
+
+            const currentBoto3Version = fs.readFileSync('./boto3_version.txt', 'utf8').trim()
+            const force = context.payload.inputs ? context.payload.inputs.force !== 'false' : false
+
+            const boto3Version = await getBoto3Version()
+            if (!force && currentBoto3Version === boto3Version) {
+              core.info(`No updates, ${boto3Version} is still the latest`)
+              return
+            }
+
+            const botocoreVersion = getBotocoreVersion(boto3Version)
+            core.info(`Updating to ${boto3Version} (${botocoreVersion}) over ${currentBoto3Version}`)
+            core.setOutput('current-version', currentBoto3Version)
+            core.setOutput('version', boto3Version)
+            core.setOutput('boto3-version', boto3Version)
+            core.setOutput('botocore-version', botocoreVersion)
+
+  update-docs:
+    name: Update docs
+    runs-on: ubuntu-latest
+    needs: check-version
+    if: needs.check-version.outputs.version
+    env:
+      VERSION: ${{ needs.check-version.outputs.version }}
+      BOTO3_VERSION: ${{ needs.check-version.outputs.boto3-version }}
+      BOTOCORE_VERSION: ${{ needs.check-version.outputs.botocore-version }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: docs
+      - name: Setup git
+        run: |
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "github-actions"
+      - name: Reset branch to main
+        run: |
+          git fetch origin main:main
+          git reset --hard main
+          git rebase main
+      - name: Get boto3 download links
+        id: links
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { setupGlobals, extractDownloadLinks } = require('./.github/workflows/helpers.js')
+            setupGlobals({ core, context, fetch })
+
+            await extractDownloadLinks()
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+      - name: Install boto3
+        run: |
+          mkdir installtemp
+          cd installtemp
+          wget ${{ steps.links.outputs.boto3-url }}
+          wget ${{ steps.links.outputs.botocore-url }}
+          python -m pip install botocore*.whl
+          python -m pip install boto3*.whl
+          cd ..
+          rm -rf installtemp
+      - name: Install dependencies
+        run: |
+          python -m pip install -r requirements.txt
+      - name: Build docs
+        run: |
+          rm -rf docs
+          rm -rf docsmd
+          mkdir -p docsmd
+          python -m mypy_boto3_builder ./docsmd --product boto3-docs
+      - name: Build html docs
+        run: |
+          python -m mkdocs build
+          cp -r ./js ./docs
+      - name: Commit docs
+        run: |
+          git add docs docsmd
+          git commit -m "Generate docs for ${VERSION}"
+          git push -f
+      - name: Update Read the docs
+        env:
+          TOKEN: ${{ secrets.RTD_TOKEN }}
+        run: |
+          curl -X POST -H "Authorization: Token ${TOKEN}" https://readthedocs.org/api/v3/projects/boto3-stubs/versions/latest/builds/
+
+  update-marker:
+    name: Update marker file
+    runs-on: ubuntu-latest
+    needs:
+      - check-version
+      - update-docs
+    if: needs.check-version.outputs.current-version != needs.check-version.outputs.version
+    env:
+      VERSION: ${{ needs.check-version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup git
+        run: |
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "github-actions"
+      - name: Update marker file
+        run: |
+          echo $VERSION > ./boto3_version.txt
+      - name: Commit marker file
+        run: |
+          git add boto3_version.txt
+          git commit -m "Update marker to ${VERSION}"
+          git push
