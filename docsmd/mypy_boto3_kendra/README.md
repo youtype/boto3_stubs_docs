@@ -1,0 +1,498 @@
+#  Kendra module
+
+> [Index](../README.md) > Kendra
+
+!!! note ""
+
+    Auto-generated documentation for [Kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra)
+    type annotations stubs module [mypy-boto3-kendra](https://pypi.org/project/mypy-boto3-kendra/).
+
+## How to install
+
+### Generate locally (recommended)
+
+You can generate type annotations for `boto3` package locally with `mypy-boto3-builder`.
+Use [uv](https://docs.astral.sh/uv/getting-started/installation/) for build isolation.
+
+1. Run mypy-boto3-builder in your package root directory: `uvx --with 'boto3==1.43.89' mypy-boto3-builder`
+1. Select `boto3-stubs` AWS SDK.
+1. Add `Kendra` service.
+1. Use provided commands to install generated packages.
+
+
+### VSCode extension
+
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+extension to your VSCode and run `AWS boto3: Quick Start` command.
+
+Click `Modify` and select `boto3 common` and `Kendra`.
+
+
+### From PyPI with pip
+
+Install `boto3-stubs` for `Kendra` service.
+
+```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[kendra]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[kendra]'
+
+# standalone installation
+python -m pip install mypy-boto3-kendra
+```
+
+
+
+## How to uninstall
+
+```bash
+python -m pip uninstall -y mypy-boto3-kendra
+```
+
+## Usage
+
+Code samples can be found in [Examples](./usage.md).
+
+## KendraClient
+
+Type annotations and code completion for  `#!python boto3.client("kendra")` as [KendraClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client)
+
+```python
+# KendraClient usage example
+
+from boto3.session import Session
+
+from mypy_boto3_kendra.client import KendraClient
+
+def get_client() -> KendraClient:
+    return Session().client("kendra")
+```
+
+
+
+
+
+
+
+
+
+## Literals
+
+Type annotations for [literals](./literals.md) used in methods and schema.
+
+```python
+# AdditionalResultAttributeValueTypeType usage example
+
+from mypy_boto3_kendra.literals import AdditionalResultAttributeValueTypeType
+
+def get_value() -> AdditionalResultAttributeValueTypeType:
+    return "TEXT_WITH_HIGHLIGHTS_VALUE"
+```
+
+- [AdditionalResultAttributeValueTypeType](./literals.md#additionalresultattributevaluetypetype)
+- [AlfrescoEntityType](./literals.md#alfrescoentitytype)
+- [AttributeSuggestionsModeType](./literals.md#attributesuggestionsmodetype)
+- [ConditionOperatorType](./literals.md#conditionoperatortype)
+- [ConfluenceAttachmentFieldNameType](./literals.md#confluenceattachmentfieldnametype)
+- [ConfluenceAuthenticationTypeType](./literals.md#confluenceauthenticationtypetype)
+- [ConfluenceBlogFieldNameType](./literals.md#confluenceblogfieldnametype)
+- [ConfluencePageFieldNameType](./literals.md#confluencepagefieldnametype)
+- [ConfluenceSpaceFieldNameType](./literals.md#confluencespacefieldnametype)
+- [ConfluenceVersionType](./literals.md#confluenceversiontype)
+- [ContentTypeType](./literals.md#contenttypetype)
+- [DataSourceStatusType](./literals.md#datasourcestatustype)
+- [DataSourceSyncJobStatusType](./literals.md#datasourcesyncjobstatustype)
+- [DataSourceTypeType](./literals.md#datasourcetypetype)
+- [DatabaseEngineTypeType](./literals.md#databaseenginetypetype)
+- [DocumentAttributeValueTypeType](./literals.md#documentattributevaluetypetype)
+- [DocumentStatusType](./literals.md#documentstatustype)
+- [EndpointTypeType](./literals.md#endpointtypetype)
+- [EntityTypeType](./literals.md#entitytypetype)
+- [ErrorCodeType](./literals.md#errorcodetype)
+- [ExperienceStatusType](./literals.md#experiencestatustype)
+- [FaqFileFormatType](./literals.md#faqfileformattype)
+- [FaqStatusType](./literals.md#faqstatustype)
+- [FeaturedResultsSetStatusType](./literals.md#featuredresultssetstatustype)
+- [FsxFileSystemTypeType](./literals.md#fsxfilesystemtypetype)
+- [HighlightTypeType](./literals.md#highlighttypetype)
+- [IndexEditionType](./literals.md#indexeditiontype)
+- [IndexStatusType](./literals.md#indexstatustype)
+- [IntervalType](./literals.md#intervaltype)
+- [IssueSubEntityType](./literals.md#issuesubentitytype)
+- [KeyLocationType](./literals.md#keylocationtype)
+- [MetricTypeType](./literals.md#metrictypetype)
+- [MissingAttributeKeyStrategyType](./literals.md#missingattributekeystrategytype)
+- [ModeType](./literals.md#modetype)
+- [OrderType](./literals.md#ordertype)
+- [PersonaType](./literals.md#personatype)
+- [PrincipalMappingStatusType](./literals.md#principalmappingstatustype)
+- [PrincipalTypeType](./literals.md#principaltypetype)
+- [QueryIdentifiersEnclosingOptionType](./literals.md#queryidentifiersenclosingoptiontype)
+- [QueryResultFormatType](./literals.md#queryresultformattype)
+- [QueryResultTypeType](./literals.md#queryresulttypetype)
+- [QuerySuggestionsBlockListStatusType](./literals.md#querysuggestionsblockliststatustype)
+- [QuerySuggestionsStatusType](./literals.md#querysuggestionsstatustype)
+- [ReadAccessTypeType](./literals.md#readaccesstypetype)
+- [RelevanceTypeType](./literals.md#relevancetypetype)
+- [SalesforceChatterFeedIncludeFilterTypeType](./literals.md#salesforcechatterfeedincludefiltertypetype)
+- [SalesforceKnowledgeArticleStateType](./literals.md#salesforceknowledgearticlestatetype)
+- [SalesforceStandardObjectNameType](./literals.md#salesforcestandardobjectnametype)
+- [ScoreConfidenceType](./literals.md#scoreconfidencetype)
+- [ServiceNowAuthenticationTypeType](./literals.md#servicenowauthenticationtypetype)
+- [ServiceNowBuildVersionTypeType](./literals.md#servicenowbuildversiontypetype)
+- [SharePointOnlineAuthenticationTypeType](./literals.md#sharepointonlineauthenticationtypetype)
+- [SharePointVersionType](./literals.md#sharepointversiontype)
+- [SlackEntityType](./literals.md#slackentitytype)
+- [SortOrderType](./literals.md#sortordertype)
+- [SuggestionTypeType](./literals.md#suggestiontypetype)
+- [ThesaurusStatusType](./literals.md#thesaurusstatustype)
+- [TypeType](./literals.md#typetype)
+- [UserContextPolicyType](./literals.md#usercontextpolicytype)
+- [UserGroupResolutionModeType](./literals.md#usergroupresolutionmodetype)
+- [WarningCodeType](./literals.md#warningcodetype)
+- [WebCrawlerModeType](./literals.md#webcrawlermodetype)
+- [KendraServiceName](./literals.md#kendraservicename)
+- [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
+
+
+
+
+## Type definitions
+
+Type annotations for [type definitions](./type_defs.md) used in methods and schema.
+
+- [AccessControlConfigurationSummaryTypeDef](./type_defs.md#accesscontrolconfigurationsummarytypedef)
+- [AccessControlListConfigurationTypeDef](./type_defs.md#accesscontrollistconfigurationtypedef)
+- [AclConfigurationTypeDef](./type_defs.md#aclconfigurationtypedef)
+- [DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)
+- [DataSourceVpcConfigurationOutputTypeDef](./type_defs.md#datasourcevpcconfigurationoutputtypedef)
+- [S3PathTypeDef](./type_defs.md#s3pathtypedef)
+- [DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef)
+- [EntityConfigurationTypeDef](./type_defs.md#entityconfigurationtypedef)
+- [FailedEntityTypeDef](./type_defs.md#failedentitytypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [EntityPersonaConfigurationTypeDef](./type_defs.md#entitypersonaconfigurationtypedef)
+- [SuggestableConfigTypeDef](./type_defs.md#suggestableconfigtypedef)
+- [BasicAuthenticationConfigurationTypeDef](./type_defs.md#basicauthenticationconfigurationtypedef)
+- [DataSourceSyncJobMetricTargetTypeDef](./type_defs.md#datasourcesyncjobmetrictargettypedef)
+- [BatchDeleteDocumentResponseFailedDocumentTypeDef](./type_defs.md#batchdeletedocumentresponsefaileddocumenttypedef)
+- [BatchDeleteFeaturedResultsSetErrorTypeDef](./type_defs.md#batchdeletefeaturedresultsseterrortypedef)
+- [BatchDeleteFeaturedResultsSetRequestTypeDef](./type_defs.md#batchdeletefeaturedresultssetrequesttypedef)
+- [BatchGetDocumentStatusResponseErrorTypeDef](./type_defs.md#batchgetdocumentstatusresponseerrortypedef)
+- [StatusTypeDef](./type_defs.md#statustypedef)
+- [BatchPutDocumentResponseFailedDocumentTypeDef](./type_defs.md#batchputdocumentresponsefaileddocumenttypedef)
+- [BlobTypeDef](./type_defs.md#blobtypedef)
+- [CapacityUnitsConfigurationTypeDef](./type_defs.md#capacityunitsconfigurationtypedef)
+- [ClearQuerySuggestionsRequestTypeDef](./type_defs.md#clearquerysuggestionsrequesttypedef)
+- [TimestampTypeDef](./type_defs.md#timestamptypedef)
+- [ExpandConfigurationTypeDef](./type_defs.md#expandconfigurationtypedef)
+- [SortingConfigurationTypeDef](./type_defs.md#sortingconfigurationtypedef)
+- [ConfluenceAttachmentToIndexFieldMappingTypeDef](./type_defs.md#confluenceattachmenttoindexfieldmappingtypedef)
+- [ConfluenceBlogToIndexFieldMappingTypeDef](./type_defs.md#confluenceblogtoindexfieldmappingtypedef)
+- [ProxyConfigurationTypeDef](./type_defs.md#proxyconfigurationtypedef)
+- [ConfluencePageToIndexFieldMappingTypeDef](./type_defs.md#confluencepagetoindexfieldmappingtypedef)
+- [ConfluenceSpaceToIndexFieldMappingTypeDef](./type_defs.md#confluencespacetoindexfieldmappingtypedef)
+- [ConnectionConfigurationTypeDef](./type_defs.md#connectionconfigurationtypedef)
+- [ContentSourceConfigurationOutputTypeDef](./type_defs.md#contentsourceconfigurationoutputtypedef)
+- [ContentSourceConfigurationTypeDef](./type_defs.md#contentsourceconfigurationtypedef)
+- [CorrectionTypeDef](./type_defs.md#correctiontypedef)
+- [PrincipalTypeDef](./type_defs.md#principaltypedef)
+- [TagTypeDef](./type_defs.md#tagtypedef)
+- [FeaturedDocumentTypeDef](./type_defs.md#featureddocumenttypedef)
+- [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
+- [UserGroupResolutionConfigurationTypeDef](./type_defs.md#usergroupresolutionconfigurationtypedef)
+- [TemplateConfigurationOutputTypeDef](./type_defs.md#templateconfigurationoutputtypedef)
+- [TemplateConfigurationTypeDef](./type_defs.md#templateconfigurationtypedef)
+- [DataSourceGroupTypeDef](./type_defs.md#datasourcegrouptypedef)
+- [DataSourceSummaryTypeDef](./type_defs.md#datasourcesummarytypedef)
+- [DataSourceSyncJobMetricsTypeDef](./type_defs.md#datasourcesyncjobmetricstypedef)
+- [SqlConfigurationTypeDef](./type_defs.md#sqlconfigurationtypedef)
+- [DeleteAccessControlConfigurationRequestTypeDef](./type_defs.md#deleteaccesscontrolconfigurationrequesttypedef)
+- [DeleteDataSourceRequestTypeDef](./type_defs.md#deletedatasourcerequesttypedef)
+- [DeleteExperienceRequestTypeDef](./type_defs.md#deleteexperiencerequesttypedef)
+- [DeleteFaqRequestTypeDef](./type_defs.md#deletefaqrequesttypedef)
+- [DeleteIndexRequestTypeDef](./type_defs.md#deleteindexrequesttypedef)
+- [DeletePrincipalMappingRequestTypeDef](./type_defs.md#deleteprincipalmappingrequesttypedef)
+- [DeleteQuerySuggestionsBlockListRequestTypeDef](./type_defs.md#deletequerysuggestionsblocklistrequesttypedef)
+- [DeleteThesaurusRequestTypeDef](./type_defs.md#deletethesaurusrequesttypedef)
+- [DescribeAccessControlConfigurationRequestTypeDef](./type_defs.md#describeaccesscontrolconfigurationrequesttypedef)
+- [DescribeDataSourceRequestTypeDef](./type_defs.md#describedatasourcerequesttypedef)
+- [DescribeExperienceRequestTypeDef](./type_defs.md#describeexperiencerequesttypedef)
+- [ExperienceEndpointTypeDef](./type_defs.md#experienceendpointtypedef)
+- [DescribeFaqRequestTypeDef](./type_defs.md#describefaqrequesttypedef)
+- [DescribeFeaturedResultsSetRequestTypeDef](./type_defs.md#describefeaturedresultssetrequesttypedef)
+- [FeaturedDocumentMissingTypeDef](./type_defs.md#featureddocumentmissingtypedef)
+- [FeaturedDocumentWithMetadataTypeDef](./type_defs.md#featureddocumentwithmetadatatypedef)
+- [DescribeIndexRequestTypeDef](./type_defs.md#describeindexrequesttypedef)
+- [DescribePrincipalMappingRequestTypeDef](./type_defs.md#describeprincipalmappingrequesttypedef)
+- [GroupOrderingIdSummaryTypeDef](./type_defs.md#grouporderingidsummarytypedef)
+- [DescribeQuerySuggestionsBlockListRequestTypeDef](./type_defs.md#describequerysuggestionsblocklistrequesttypedef)
+- [DescribeQuerySuggestionsConfigRequestTypeDef](./type_defs.md#describequerysuggestionsconfigrequesttypedef)
+- [DescribeThesaurusRequestTypeDef](./type_defs.md#describethesaurusrequesttypedef)
+- [DisassociatePersonasFromEntitiesRequestTypeDef](./type_defs.md#disassociatepersonasfromentitiesrequesttypedef)
+- [DocumentAttributeValueOutputTypeDef](./type_defs.md#documentattributevalueoutputtypedef)
+- [RelevanceOutputTypeDef](./type_defs.md#relevanceoutputtypedef)
+- [SearchTypeDef](./type_defs.md#searchtypedef)
+- [DocumentsMetadataConfigurationTypeDef](./type_defs.md#documentsmetadataconfigurationtypedef)
+- [EntityDisplayDataTypeDef](./type_defs.md#entitydisplaydatatypedef)
+- [UserIdentityConfigurationTypeDef](./type_defs.md#useridentityconfigurationtypedef)
+- [FacetTypeDef](./type_defs.md#facettypedef)
+- [FaqStatisticsTypeDef](./type_defs.md#faqstatisticstypedef)
+- [FaqSummaryTypeDef](./type_defs.md#faqsummarytypedef)
+- [FeaturedResultsSetSummaryTypeDef](./type_defs.md#featuredresultssetsummarytypedef)
+- [GetSnapshotsRequestTypeDef](./type_defs.md#getsnapshotsrequesttypedef)
+- [TimeRangeOutputTypeDef](./type_defs.md#timerangeoutputtypedef)
+- [GitHubDocumentCrawlPropertiesTypeDef](./type_defs.md#githubdocumentcrawlpropertiestypedef)
+- [SaaSConfigurationTypeDef](./type_defs.md#saasconfigurationtypedef)
+- [MemberGroupTypeDef](./type_defs.md#membergrouptypedef)
+- [MemberUserTypeDef](./type_defs.md#memberusertypedef)
+- [GroupSummaryTypeDef](./type_defs.md#groupsummarytypedef)
+- [HighlightTypeDef](./type_defs.md#highlighttypedef)
+- [IndexConfigurationSummaryTypeDef](./type_defs.md#indexconfigurationsummarytypedef)
+- [TextDocumentStatisticsTypeDef](./type_defs.md#textdocumentstatisticstypedef)
+- [JsonTokenTypeConfigurationTypeDef](./type_defs.md#jsontokentypeconfigurationtypedef)
+- [JwtTokenTypeConfigurationTypeDef](./type_defs.md#jwttokentypeconfigurationtypedef)
+- [ListAccessControlConfigurationsRequestTypeDef](./type_defs.md#listaccesscontrolconfigurationsrequesttypedef)
+- [ListDataSourcesRequestTypeDef](./type_defs.md#listdatasourcesrequesttypedef)
+- [ListEntityPersonasRequestTypeDef](./type_defs.md#listentitypersonasrequesttypedef)
+- [PersonasSummaryTypeDef](./type_defs.md#personassummarytypedef)
+- [ListExperienceEntitiesRequestTypeDef](./type_defs.md#listexperienceentitiesrequesttypedef)
+- [ListExperiencesRequestTypeDef](./type_defs.md#listexperiencesrequesttypedef)
+- [ListFaqsRequestTypeDef](./type_defs.md#listfaqsrequesttypedef)
+- [ListFeaturedResultsSetsRequestTypeDef](./type_defs.md#listfeaturedresultssetsrequesttypedef)
+- [ListGroupsOlderThanOrderingIdRequestTypeDef](./type_defs.md#listgroupsolderthanorderingidrequesttypedef)
+- [ListIndicesRequestTypeDef](./type_defs.md#listindicesrequesttypedef)
+- [ListQuerySuggestionsBlockListsRequestTypeDef](./type_defs.md#listquerysuggestionsblocklistsrequesttypedef)
+- [QuerySuggestionsBlockListSummaryTypeDef](./type_defs.md#querysuggestionsblocklistsummarytypedef)
+- [ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef)
+- [ListThesauriRequestTypeDef](./type_defs.md#listthesaurirequesttypedef)
+- [ThesaurusSummaryTypeDef](./type_defs.md#thesaurussummarytypedef)
+- [SpellCorrectionConfigurationTypeDef](./type_defs.md#spellcorrectionconfigurationtypedef)
+- [ScoreAttributesTypeDef](./type_defs.md#scoreattributestypedef)
+- [WarningTypeDef](./type_defs.md#warningtypedef)
+- [RelevanceFeedbackTypeDef](./type_defs.md#relevancefeedbacktypedef)
+- [RelevanceTypeDef](./type_defs.md#relevancetypedef)
+- [SeedUrlConfigurationOutputTypeDef](./type_defs.md#seedurlconfigurationoutputtypedef)
+- [SeedUrlConfigurationTypeDef](./type_defs.md#seedurlconfigurationtypedef)
+- [SiteMapsConfigurationOutputTypeDef](./type_defs.md#sitemapsconfigurationoutputtypedef)
+- [SiteMapsConfigurationTypeDef](./type_defs.md#sitemapsconfigurationtypedef)
+- [StartDataSourceSyncJobRequestTypeDef](./type_defs.md#startdatasourcesyncjobrequesttypedef)
+- [StopDataSourceSyncJobRequestTypeDef](./type_defs.md#stopdatasourcesyncjobrequesttypedef)
+- [SuggestionHighlightTypeDef](./type_defs.md#suggestionhighlighttypedef)
+- [TableCellTypeDef](./type_defs.md#tablecelltypedef)
+- [UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef)
+- [ColumnConfigurationOutputTypeDef](./type_defs.md#columnconfigurationoutputtypedef)
+- [ColumnConfigurationTypeDef](./type_defs.md#columnconfigurationtypedef)
+- [GoogleDriveConfigurationOutputTypeDef](./type_defs.md#googledriveconfigurationoutputtypedef)
+- [GoogleDriveConfigurationTypeDef](./type_defs.md#googledriveconfigurationtypedef)
+- [SalesforceChatterFeedConfigurationOutputTypeDef](./type_defs.md#salesforcechatterfeedconfigurationoutputtypedef)
+- [SalesforceChatterFeedConfigurationTypeDef](./type_defs.md#salesforcechatterfeedconfigurationtypedef)
+- [SalesforceCustomKnowledgeArticleTypeConfigurationOutputTypeDef](./type_defs.md#salesforcecustomknowledgearticletypeconfigurationoutputtypedef)
+- [SalesforceCustomKnowledgeArticleTypeConfigurationTypeDef](./type_defs.md#salesforcecustomknowledgearticletypeconfigurationtypedef)
+- [SalesforceStandardKnowledgeArticleTypeConfigurationOutputTypeDef](./type_defs.md#salesforcestandardknowledgearticletypeconfigurationoutputtypedef)
+- [SalesforceStandardKnowledgeArticleTypeConfigurationTypeDef](./type_defs.md#salesforcestandardknowledgearticletypeconfigurationtypedef)
+- [SalesforceStandardObjectAttachmentConfigurationOutputTypeDef](./type_defs.md#salesforcestandardobjectattachmentconfigurationoutputtypedef)
+- [SalesforceStandardObjectAttachmentConfigurationTypeDef](./type_defs.md#salesforcestandardobjectattachmentconfigurationtypedef)
+- [SalesforceStandardObjectConfigurationOutputTypeDef](./type_defs.md#salesforcestandardobjectconfigurationoutputtypedef)
+- [SalesforceStandardObjectConfigurationTypeDef](./type_defs.md#salesforcestandardobjectconfigurationtypedef)
+- [ServiceNowKnowledgeArticleConfigurationOutputTypeDef](./type_defs.md#servicenowknowledgearticleconfigurationoutputtypedef)
+- [ServiceNowKnowledgeArticleConfigurationTypeDef](./type_defs.md#servicenowknowledgearticleconfigurationtypedef)
+- [ServiceNowServiceCatalogConfigurationOutputTypeDef](./type_defs.md#servicenowservicecatalogconfigurationoutputtypedef)
+- [ServiceNowServiceCatalogConfigurationTypeDef](./type_defs.md#servicenowservicecatalogconfigurationtypedef)
+- [WorkDocsConfigurationOutputTypeDef](./type_defs.md#workdocsconfigurationoutputtypedef)
+- [WorkDocsConfigurationTypeDef](./type_defs.md#workdocsconfigurationtypedef)
+- [BoxConfigurationOutputTypeDef](./type_defs.md#boxconfigurationoutputtypedef)
+- [FsxConfigurationOutputTypeDef](./type_defs.md#fsxconfigurationoutputtypedef)
+- [JiraConfigurationOutputTypeDef](./type_defs.md#jiraconfigurationoutputtypedef)
+- [QuipConfigurationOutputTypeDef](./type_defs.md#quipconfigurationoutputtypedef)
+- [SlackConfigurationOutputTypeDef](./type_defs.md#slackconfigurationoutputtypedef)
+- [AlfrescoConfigurationOutputTypeDef](./type_defs.md#alfrescoconfigurationoutputtypedef)
+- [OnPremiseConfigurationTypeDef](./type_defs.md#onpremiseconfigurationtypedef)
+- [OneDriveUsersOutputTypeDef](./type_defs.md#onedriveusersoutputtypedef)
+- [OneDriveUsersTypeDef](./type_defs.md#onedriveuserstypedef)
+- [UpdateQuerySuggestionsBlockListRequestTypeDef](./type_defs.md#updatequerysuggestionsblocklistrequesttypedef)
+- [UpdateThesaurusRequestTypeDef](./type_defs.md#updatethesaurusrequesttypedef)
+- [AlfrescoConfigurationTypeDef](./type_defs.md#alfrescoconfigurationtypedef)
+- [BoxConfigurationTypeDef](./type_defs.md#boxconfigurationtypedef)
+- [DataSourceVpcConfigurationUnionTypeDef](./type_defs.md#datasourcevpcconfigurationuniontypedef)
+- [FsxConfigurationTypeDef](./type_defs.md#fsxconfigurationtypedef)
+- [JiraConfigurationTypeDef](./type_defs.md#jiraconfigurationtypedef)
+- [QuipConfigurationTypeDef](./type_defs.md#quipconfigurationtypedef)
+- [SlackConfigurationTypeDef](./type_defs.md#slackconfigurationtypedef)
+- [AssociateEntitiesToExperienceRequestTypeDef](./type_defs.md#associateentitiestoexperiencerequesttypedef)
+- [DisassociateEntitiesFromExperienceRequestTypeDef](./type_defs.md#disassociateentitiesfromexperiencerequesttypedef)
+- [AssociateEntitiesToExperienceResponseTypeDef](./type_defs.md#associateentitiestoexperienceresponsetypedef)
+- [AssociatePersonasToEntitiesResponseTypeDef](./type_defs.md#associatepersonastoentitiesresponsetypedef)
+- [CreateAccessControlConfigurationResponseTypeDef](./type_defs.md#createaccesscontrolconfigurationresponsetypedef)
+- [CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef)
+- [CreateExperienceResponseTypeDef](./type_defs.md#createexperienceresponsetypedef)
+- [CreateFaqResponseTypeDef](./type_defs.md#createfaqresponsetypedef)
+- [CreateIndexResponseTypeDef](./type_defs.md#createindexresponsetypedef)
+- [CreateQuerySuggestionsBlockListResponseTypeDef](./type_defs.md#createquerysuggestionsblocklistresponsetypedef)
+- [CreateThesaurusResponseTypeDef](./type_defs.md#createthesaurusresponsetypedef)
+- [DescribeFaqResponseTypeDef](./type_defs.md#describefaqresponsetypedef)
+- [DescribeQuerySuggestionsBlockListResponseTypeDef](./type_defs.md#describequerysuggestionsblocklistresponsetypedef)
+- [DescribeThesaurusResponseTypeDef](./type_defs.md#describethesaurusresponsetypedef)
+- [DisassociateEntitiesFromExperienceResponseTypeDef](./type_defs.md#disassociateentitiesfromexperienceresponsetypedef)
+- [DisassociatePersonasFromEntitiesResponseTypeDef](./type_defs.md#disassociatepersonasfromentitiesresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
+- [ListAccessControlConfigurationsResponseTypeDef](./type_defs.md#listaccesscontrolconfigurationsresponsetypedef)
+- [StartDataSourceSyncJobResponseTypeDef](./type_defs.md#startdatasourcesyncjobresponsetypedef)
+- [AssociatePersonasToEntitiesRequestTypeDef](./type_defs.md#associatepersonastoentitiesrequesttypedef)
+- [AttributeSuggestionsDescribeConfigTypeDef](./type_defs.md#attributesuggestionsdescribeconfigtypedef)
+- [AttributeSuggestionsUpdateConfigTypeDef](./type_defs.md#attributesuggestionsupdateconfigtypedef)
+- [AuthenticationConfigurationOutputTypeDef](./type_defs.md#authenticationconfigurationoutputtypedef)
+- [AuthenticationConfigurationTypeDef](./type_defs.md#authenticationconfigurationtypedef)
+- [BatchDeleteDocumentRequestTypeDef](./type_defs.md#batchdeletedocumentrequesttypedef)
+- [BatchDeleteDocumentResponseTypeDef](./type_defs.md#batchdeletedocumentresponsetypedef)
+- [BatchDeleteFeaturedResultsSetResponseTypeDef](./type_defs.md#batchdeletefeaturedresultssetresponsetypedef)
+- [BatchGetDocumentStatusResponseTypeDef](./type_defs.md#batchgetdocumentstatusresponsetypedef)
+- [BatchPutDocumentResponseTypeDef](./type_defs.md#batchputdocumentresponsetypedef)
+- [ClickFeedbackTypeDef](./type_defs.md#clickfeedbacktypedef)
+- [DocumentAttributeValueTypeDef](./type_defs.md#documentattributevaluetypedef)
+- [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
+- [CollapseConfigurationTypeDef](./type_defs.md#collapseconfigurationtypedef)
+- [ConfluenceAttachmentConfigurationOutputTypeDef](./type_defs.md#confluenceattachmentconfigurationoutputtypedef)
+- [ConfluenceAttachmentConfigurationTypeDef](./type_defs.md#confluenceattachmentconfigurationtypedef)
+- [ConfluenceBlogConfigurationOutputTypeDef](./type_defs.md#confluenceblogconfigurationoutputtypedef)
+- [ConfluenceBlogConfigurationTypeDef](./type_defs.md#confluenceblogconfigurationtypedef)
+- [SharePointConfigurationOutputTypeDef](./type_defs.md#sharepointconfigurationoutputtypedef)
+- [SharePointConfigurationTypeDef](./type_defs.md#sharepointconfigurationtypedef)
+- [ConfluencePageConfigurationOutputTypeDef](./type_defs.md#confluencepageconfigurationoutputtypedef)
+- [ConfluencePageConfigurationTypeDef](./type_defs.md#confluencepageconfigurationtypedef)
+- [ConfluenceSpaceConfigurationOutputTypeDef](./type_defs.md#confluencespaceconfigurationoutputtypedef)
+- [ConfluenceSpaceConfigurationTypeDef](./type_defs.md#confluencespaceconfigurationtypedef)
+- [SpellCorrectedQueryTypeDef](./type_defs.md#spellcorrectedquerytypedef)
+- [HierarchicalPrincipalOutputTypeDef](./type_defs.md#hierarchicalprincipaloutputtypedef)
+- [HierarchicalPrincipalTypeDef](./type_defs.md#hierarchicalprincipaltypedef)
+- [CreateFaqRequestTypeDef](./type_defs.md#createfaqrequesttypedef)
+- [CreateQuerySuggestionsBlockListRequestTypeDef](./type_defs.md#createquerysuggestionsblocklistrequesttypedef)
+- [CreateThesaurusRequestTypeDef](./type_defs.md#createthesaurusrequesttypedef)
+- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef)
+- [CreateFeaturedResultsSetRequestTypeDef](./type_defs.md#createfeaturedresultssetrequesttypedef)
+- [FeaturedResultsSetTypeDef](./type_defs.md#featuredresultssettypedef)
+- [UpdateFeaturedResultsSetRequestTypeDef](./type_defs.md#updatefeaturedresultssetrequesttypedef)
+- [UserContextTypeDef](./type_defs.md#usercontexttypedef)
+- [ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef)
+- [DataSourceSyncJobTypeDef](./type_defs.md#datasourcesyncjobtypedef)
+- [ExperiencesSummaryTypeDef](./type_defs.md#experiencessummarytypedef)
+- [DescribeFeaturedResultsSetResponseTypeDef](./type_defs.md#describefeaturedresultssetresponsetypedef)
+- [DescribePrincipalMappingResponseTypeDef](./type_defs.md#describeprincipalmappingresponsetypedef)
+- [DocumentAttributeConditionOutputTypeDef](./type_defs.md#documentattributeconditionoutputtypedef)
+- [DocumentAttributeOutputTypeDef](./type_defs.md#documentattributeoutputtypedef)
+- [DocumentAttributeTargetOutputTypeDef](./type_defs.md#documentattributetargetoutputtypedef)
+- [DocumentAttributeValueCountPairTypeDef](./type_defs.md#documentattributevaluecountpairtypedef)
+- [DocumentMetadataConfigurationOutputTypeDef](./type_defs.md#documentmetadataconfigurationoutputtypedef)
+- [S3DataSourceConfigurationOutputTypeDef](./type_defs.md#s3datasourceconfigurationoutputtypedef)
+- [S3DataSourceConfigurationTypeDef](./type_defs.md#s3datasourceconfigurationtypedef)
+- [ExperienceEntitiesSummaryTypeDef](./type_defs.md#experienceentitiessummarytypedef)
+- [ExperienceConfigurationOutputTypeDef](./type_defs.md#experienceconfigurationoutputtypedef)
+- [ExperienceConfigurationTypeDef](./type_defs.md#experienceconfigurationtypedef)
+- [ListFaqsResponseTypeDef](./type_defs.md#listfaqsresponsetypedef)
+- [ListFeaturedResultsSetsResponseTypeDef](./type_defs.md#listfeaturedresultssetsresponsetypedef)
+- [GetSnapshotsResponseTypeDef](./type_defs.md#getsnapshotsresponsetypedef)
+- [GroupMembersTypeDef](./type_defs.md#groupmemberstypedef)
+- [ListGroupsOlderThanOrderingIdResponseTypeDef](./type_defs.md#listgroupsolderthanorderingidresponsetypedef)
+- [TextWithHighlightsTypeDef](./type_defs.md#textwithhighlightstypedef)
+- [ListIndicesResponseTypeDef](./type_defs.md#listindicesresponsetypedef)
+- [IndexStatisticsTypeDef](./type_defs.md#indexstatisticstypedef)
+- [UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)
+- [ListEntityPersonasResponseTypeDef](./type_defs.md#listentitypersonasresponsetypedef)
+- [ListQuerySuggestionsBlockListsResponseTypeDef](./type_defs.md#listquerysuggestionsblocklistsresponsetypedef)
+- [ListThesauriResponseTypeDef](./type_defs.md#listthesauriresponsetypedef)
+- [RelevanceUnionTypeDef](./type_defs.md#relevanceuniontypedef)
+- [UrlsOutputTypeDef](./type_defs.md#urlsoutputtypedef)
+- [UrlsTypeDef](./type_defs.md#urlstypedef)
+- [SuggestionTextWithHighlightsTypeDef](./type_defs.md#suggestiontextwithhighlightstypedef)
+- [TableRowTypeDef](./type_defs.md#tablerowtypedef)
+- [DatabaseConfigurationOutputTypeDef](./type_defs.md#databaseconfigurationoutputtypedef)
+- [DatabaseConfigurationTypeDef](./type_defs.md#databaseconfigurationtypedef)
+- [SalesforceKnowledgeArticleConfigurationOutputTypeDef](./type_defs.md#salesforceknowledgearticleconfigurationoutputtypedef)
+- [SalesforceKnowledgeArticleConfigurationTypeDef](./type_defs.md#salesforceknowledgearticleconfigurationtypedef)
+- [ServiceNowConfigurationOutputTypeDef](./type_defs.md#servicenowconfigurationoutputtypedef)
+- [ServiceNowConfigurationTypeDef](./type_defs.md#servicenowconfigurationtypedef)
+- [GitHubConfigurationOutputTypeDef](./type_defs.md#githubconfigurationoutputtypedef)
+- [GitHubConfigurationTypeDef](./type_defs.md#githubconfigurationtypedef)
+- [OneDriveConfigurationOutputTypeDef](./type_defs.md#onedriveconfigurationoutputtypedef)
+- [OneDriveConfigurationTypeDef](./type_defs.md#onedriveconfigurationtypedef)
+- [DescribeQuerySuggestionsConfigResponseTypeDef](./type_defs.md#describequerysuggestionsconfigresponsetypedef)
+- [UpdateQuerySuggestionsConfigRequestTypeDef](./type_defs.md#updatequerysuggestionsconfigrequesttypedef)
+- [SubmitFeedbackRequestTypeDef](./type_defs.md#submitfeedbackrequesttypedef)
+- [DocumentAttributeConditionTypeDef](./type_defs.md#documentattributeconditiontypedef)
+- [DocumentAttributeTargetTypeDef](./type_defs.md#documentattributetargettypedef)
+- [DocumentAttributeValueUnionTypeDef](./type_defs.md#documentattributevalueuniontypedef)
+- [TimeRangeUnionTypeDef](./type_defs.md#timerangeuniontypedef)
+- [ConfluenceConfigurationOutputTypeDef](./type_defs.md#confluenceconfigurationoutputtypedef)
+- [ConfluenceConfigurationTypeDef](./type_defs.md#confluenceconfigurationtypedef)
+- [DescribeAccessControlConfigurationResponseTypeDef](./type_defs.md#describeaccesscontrolconfigurationresponsetypedef)
+- [HierarchicalPrincipalUnionTypeDef](./type_defs.md#hierarchicalprincipaluniontypedef)
+- [CreateFeaturedResultsSetResponseTypeDef](./type_defs.md#createfeaturedresultssetresponsetypedef)
+- [UpdateFeaturedResultsSetResponseTypeDef](./type_defs.md#updatefeaturedresultssetresponsetypedef)
+- [ListDataSourceSyncJobsResponseTypeDef](./type_defs.md#listdatasourcesyncjobsresponsetypedef)
+- [ListExperiencesResponseTypeDef](./type_defs.md#listexperiencesresponsetypedef)
+- [HookConfigurationOutputTypeDef](./type_defs.md#hookconfigurationoutputtypedef)
+- [RetrieveResultItemTypeDef](./type_defs.md#retrieveresultitemtypedef)
+- [SourceDocumentTypeDef](./type_defs.md#sourcedocumenttypedef)
+- [InlineCustomDocumentEnrichmentConfigurationOutputTypeDef](./type_defs.md#inlinecustomdocumentenrichmentconfigurationoutputtypedef)
+- [FacetResultTypeDef](./type_defs.md#facetresulttypedef)
+- [ListExperienceEntitiesResponseTypeDef](./type_defs.md#listexperienceentitiesresponsetypedef)
+- [DescribeExperienceResponseTypeDef](./type_defs.md#describeexperienceresponsetypedef)
+- [ExperienceConfigurationUnionTypeDef](./type_defs.md#experienceconfigurationuniontypedef)
+- [PutPrincipalMappingRequestTypeDef](./type_defs.md#putprincipalmappingrequesttypedef)
+- [AdditionalResultAttributeValueTypeDef](./type_defs.md#additionalresultattributevaluetypedef)
+- [ExpandedResultItemTypeDef](./type_defs.md#expandedresultitemtypedef)
+- [CreateIndexRequestTypeDef](./type_defs.md#createindexrequesttypedef)
+- [DescribeIndexResponseTypeDef](./type_defs.md#describeindexresponsetypedef)
+- [DocumentMetadataConfigurationTypeDef](./type_defs.md#documentmetadataconfigurationtypedef)
+- [DocumentRelevanceConfigurationTypeDef](./type_defs.md#documentrelevanceconfigurationtypedef)
+- [WebCrawlerConfigurationOutputTypeDef](./type_defs.md#webcrawlerconfigurationoutputtypedef)
+- [WebCrawlerConfigurationTypeDef](./type_defs.md#webcrawlerconfigurationtypedef)
+- [SuggestionValueTypeDef](./type_defs.md#suggestionvaluetypedef)
+- [TableExcerptTypeDef](./type_defs.md#tableexcerpttypedef)
+- [SalesforceConfigurationOutputTypeDef](./type_defs.md#salesforceconfigurationoutputtypedef)
+- [SalesforceConfigurationTypeDef](./type_defs.md#salesforceconfigurationtypedef)
+- [HookConfigurationTypeDef](./type_defs.md#hookconfigurationtypedef)
+- [InlineCustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#inlinecustomdocumentenrichmentconfigurationtypedef)
+- [DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)
+- [ListDataSourceSyncJobsRequestTypeDef](./type_defs.md#listdatasourcesyncjobsrequesttypedef)
+- [CreateAccessControlConfigurationRequestTypeDef](./type_defs.md#createaccesscontrolconfigurationrequesttypedef)
+- [UpdateAccessControlConfigurationRequestTypeDef](./type_defs.md#updateaccesscontrolconfigurationrequesttypedef)
+- [RetrieveResultTypeDef](./type_defs.md#retrieveresulttypedef)
+- [CustomDocumentEnrichmentConfigurationOutputTypeDef](./type_defs.md#customdocumentenrichmentconfigurationoutputtypedef)
+- [CreateExperienceRequestTypeDef](./type_defs.md#createexperiencerequesttypedef)
+- [UpdateExperienceRequestTypeDef](./type_defs.md#updateexperiencerequesttypedef)
+- [AdditionalResultAttributeTypeDef](./type_defs.md#additionalresultattributetypedef)
+- [CollapsedResultDetailTypeDef](./type_defs.md#collapsedresultdetailtypedef)
+- [DocumentMetadataConfigurationUnionTypeDef](./type_defs.md#documentmetadataconfigurationuniontypedef)
+- [SuggestionTypeDef](./type_defs.md#suggestiontypedef)
+- [DataSourceConfigurationOutputTypeDef](./type_defs.md#datasourceconfigurationoutputtypedef)
+- [DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef)
+- [CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef)
+- [DocumentAttributeUnionTypeDef](./type_defs.md#documentattributeuniontypedef)
+- [FeaturedResultsItemTypeDef](./type_defs.md#featuredresultsitemtypedef)
+- [QueryResultItemTypeDef](./type_defs.md#queryresultitemtypedef)
+- [UpdateIndexRequestTypeDef](./type_defs.md#updateindexrequesttypedef)
+- [GetQuerySuggestionsResponseTypeDef](./type_defs.md#getquerysuggestionsresponsetypedef)
+- [DescribeDataSourceResponseTypeDef](./type_defs.md#describedatasourceresponsetypedef)
+- [DataSourceConfigurationUnionTypeDef](./type_defs.md#datasourceconfigurationuniontypedef)
+- [CustomDocumentEnrichmentConfigurationUnionTypeDef](./type_defs.md#customdocumentenrichmentconfigurationuniontypedef)
+- [AttributeFilterTypeDef](./type_defs.md#attributefiltertypedef)
+- [DocumentInfoTypeDef](./type_defs.md#documentinfotypedef)
+- [DocumentTypeDef](./type_defs.md#documenttypedef)
+- [QueryResultTypeDef](./type_defs.md#queryresulttypedef)
+- [CreateDataSourceRequestTypeDef](./type_defs.md#createdatasourcerequesttypedef)
+- [UpdateDataSourceRequestTypeDef](./type_defs.md#updatedatasourcerequesttypedef)
+- [AttributeSuggestionsGetConfigTypeDef](./type_defs.md#attributesuggestionsgetconfigtypedef)
+- [QueryRequestTypeDef](./type_defs.md#queryrequesttypedef)
+- [RetrieveRequestTypeDef](./type_defs.md#retrieverequesttypedef)
+- [BatchGetDocumentStatusRequestTypeDef](./type_defs.md#batchgetdocumentstatusrequesttypedef)
+- [BatchPutDocumentRequestTypeDef](./type_defs.md#batchputdocumentrequesttypedef)
+- [GetQuerySuggestionsRequestTypeDef](./type_defs.md#getquerysuggestionsrequesttypedef)
+
