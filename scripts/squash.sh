@@ -2,7 +2,7 @@
 set -e
 
 git checkout --orphan new-main
-git rm -rf docs docsmd
+git rm -rf docs docsmd || true
 git commit -m "Squash"
 git branch -f main
 git checkout main
