@@ -6,8 +6,6 @@ docs_dir: "docsmd"
 
 theme:
   name: material
-  icon:
-    logo: material/file-check-outline
   palette:
     - scheme: slate
       primary: blue

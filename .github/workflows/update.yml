@@ -22,10 +22,10 @@ jobs:
       boto3-version: ${{ steps.vars.outputs.boto3-version }}
       botocore-version: ${{ steps.vars.outputs.botocore-version }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Extract versions
         id: vars
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const fs = require('fs')
@@ -60,7 +60,7 @@ jobs:
       BOTO3_VERSION: ${{ needs.check-version.outputs.boto3-version }}
       BOTOCORE_VERSION: ${{ needs.check-version.outputs.botocore-version }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: docs
       - name: Setup git
@@ -74,7 +74,7 @@ jobs:
           git rebase main
       - name: Get boto3 download links
         id: links
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const { setupGlobals, extractDownloadLinks } = require('./.github/workflows/helpers.js')
@@ -82,9 +82,9 @@ jobs:
 
             await extractDownloadLinks()
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
-          python-version: "3.12"
+          python-version: "3.14"
           cache: "pip"
       - name: Install boto3
         run: |
@@ -130,7 +130,7 @@ jobs:
     env:
       VERSION: ${{ needs.check-version.outputs.version }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Setup git
         run: |
           git config --global user.email "github-actions@github.com"
