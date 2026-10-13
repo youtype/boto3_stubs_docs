@@ -1,0 +1,17 @@
+[project]
+name = "boto3-stubs-docs"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Vlad Emelianov", email = "volshebnyi@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+boto3-stubs-docs = "boto3_stubs_docs:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
